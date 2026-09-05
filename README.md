@@ -4,12 +4,14 @@ Python-basiertes Dashboard zur Analyse und Visualisierung meiner persönlichen B
 ## Projektstruktur
 
 ```
+requirements.txt                Laufzeit-Abhängigkeiten für den Dashboard-Deploy (Streamlit Community Cloud)
+.streamlit/config.toml          Theme (Root-Kopie, da Streamlit Cloud vom Repo-Root aus startet)
 dashboard/                     Die Streamlit-App selbst (nichts anderes)
   Bewerbungsuebersicht.py      Streamlit-Einstiegsseite: Übersicht aller Bewerbungen
   pages/
     Firmenliste.py             Zweite Dashboard-Seite: Firmenliste Regensburg & Umgebung
   .streamlit/
-    config.toml                Theme-Einstellungen
+    config.toml                Theme (lokale Kopie für `cd dashboard && streamlit run ...`)
 src/                           Wiederverwendbare Python-Module (Datenaufbereitung + UI-Bausteine)
   bewerbungen.py                Liest Anschreiben-PDFs aus OneDrive, extrahiert Firma/Stelle/Datum/Ort
   firmenliste.py                Parst die handgepflegte Firmenliste (Firmen_Softwareentwicklung.txt)
@@ -66,6 +68,16 @@ committet und vom Dashboard genutzt (Antwort-Spalte + Farb-Badges auf beiden Sei
 cd dashboard
 streamlit run Bewerbungsuebersicht.py
 ```
+
+## Öffentlich deployen (Streamlit Community Cloud)
+
+1. https://share.streamlit.io → mit GitHub-Konto anmelden → **"New app"**
+2. Repository: `eufunk/regensburg-job-application-dashboard`, Branch: `main`
+3. **Main file path**: `dashboard/Bewerbungsuebersicht.py`
+4. Deploy - `requirements.txt` (Repo-Root) wird automatisch erkannt
+
+Die App liest ausschließlich `data/*.csv` (committet, keine PDFs/Postfach-Zugriff), ist
+also ohne weitere Einrichtung öffentlich lauffähig.
 
 ## Daten aktualisieren
 
