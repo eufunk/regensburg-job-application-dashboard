@@ -217,8 +217,8 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Microsoft Graph OAuth (E-Mail-Zugriff) - Login-Token, nie committen
-.msal_token_cache.json
+# Microsoft Graph OAuth (E-Mail-Zugriff) - Login-Token pro Postfach, nie committen
+.msal_token_cache*.json
 
 # Rohdaten aus dem Postfach (Auszüge, Absenderadressen) - bleiben lokal.
 # Die abgeleitete data/email_status.csv (nur Firma/Status/Datum) wird committet.

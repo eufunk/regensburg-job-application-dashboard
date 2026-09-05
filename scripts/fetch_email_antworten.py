@@ -1,8 +1,12 @@
-"""Durchsucht das Hotmail/Outlook-Postfach (via Microsoft Graph) nach E-Mails von
-Firmen aus der Bewerbungsliste und exportiert Absender, Datum, Betreff und eine
+"""Durchsucht mehrere Hotmail/Outlook-Postfächer (via Microsoft Graph) nach E-Mails
+von Firmen aus der Bewerbungsliste und exportiert Absender, Datum, Betreff und eine
 automatische Einordnung (Absage / Einladung / Zwischenbescheid / Sonstige) nach
 data/email_antworten.csv (enthält echte Auszüge/Absenderadressen - bleibt lokal,
 ist in .gitignore).
+
+Jedes Postfach in POSTFAECHER bekommt einen eigenen Login (eigener lokaler Token-
+Cache, siehe src/graph_auth.py) - beim ersten Lauf pro Postfach also ein eigener
+Device-Code. Neues Postfach hinzufügen: einfach ein weiteres Label in die Liste.
 
 WICHTIG: Dieses Skript greift auf das echte Postfach zu. NUR auf ausdrücklichen
 Wunsch der Nutzerin ausführen - niemals automatisch/proaktiv, auch nicht als Teil
@@ -36,6 +40,10 @@ OUTPUT_FILE = os.path.join(DATA_DIR, "email_antworten.csv")
 
 GRAPH = "https://graph.microsoft.com/v1.0"
 SEIT_DATUM = "2025-09-29T00:00:00Z"  # Datum der ersten Bewerbung
+
+# Freie Labels, eines pro Postfach - steuert nur den lokalen Token-Cache-Dateinamen,
+# nicht die eigentliche Konto-Auswahl (die passiert beim Login selbst im Browser).
+POSTFAECHER = ["hauptkonto", "absagen"]
 
 KLASSIFIKATION_KEYWORDS = [
     ("Absage", [
@@ -136,16 +144,13 @@ def finde_firma(absender_name: str, absender_adresse: str, betreff: str, firmen:
     return ""
 
 
-def main():
-    print("Melde mich bei Microsoft Graph an ...")
-    token = get_access_token()
+def durchsuche_postfach(account_label: str, firmen: list[str]) -> list[dict]:
+    print(f"=== Postfach '{account_label}': melde mich bei Microsoft Graph an ===")
+    token = get_access_token(account_label)
 
-    firmen = lade_firmen()
-    print(f"{len(firmen)} bekannte Firmen zum Abgleich geladen.")
-
-    print("Liste alle Postfach-Ordner auf ...")
+    print(f"[{account_label}] Liste alle Postfach-Ordner auf ...")
     folders = list_all_folders(token)
-    print(f"{len(folders)} Ordner gefunden, durchsuche jeden nach E-Mails seit {SEIT_DATUM} ...")
+    print(f"[{account_label}] {len(folders)} Ordner gefunden, durchsuche jeden nach E-Mails seit {SEIT_DATUM} ...")
 
     treffer = []
     for folder in folders:
@@ -163,6 +168,7 @@ def main():
             body = (msg.get("body", {}) or {}).get("content", "") or ""
             body_clean = re.sub(r"\s+", " ", body).strip()
             treffer.append({
+                "postfach": account_label,
                 "firma": firma,
                 "datum": msg.get("receivedDateTime", ""),
                 "ordner": folder.get("displayName", ""),
@@ -173,6 +179,18 @@ def main():
                 "auszug": body_clean[:500],
             })
 
+    print(f"[{account_label}] {len(treffer)} passende E-Mails gefunden.")
+    return treffer
+
+
+def main():
+    firmen = lade_firmen()
+    print(f"{len(firmen)} bekannte Firmen zum Abgleich geladen.")
+
+    treffer = []
+    for account_label in POSTFAECHER:
+        treffer.extend(durchsuche_postfach(account_label, firmen))
+
     df = pd.DataFrame(treffer)
     if not df.empty:
         df["datum"] = pd.to_datetime(df["datum"]).dt.tz_localize(None)
@@ -181,7 +199,7 @@ def main():
     os.makedirs(DATA_DIR, exist_ok=True)
     df.to_csv(OUTPUT_FILE, index=False, encoding="utf-8")
 
-    print(f"{len(df)} passende E-Mails gefunden, exportiert nach {OUTPUT_FILE}")
+    print(f"\n{len(df)} passende E-Mails insgesamt, exportiert nach {OUTPUT_FILE}")
     if not df.empty:
         print(df["klassifikation"].value_counts().to_string())
 
