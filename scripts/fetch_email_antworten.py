@@ -32,47 +32,16 @@ import requests
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.graph_auth import get_access_token
-from src.firmenliste import _normalize
+from src.email_matching import classify, finde_firma, lade_firmen, DATA_DIR, SEIT_DATUM as SEIT_DATUM_DATE
 
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 OUTPUT_FILE = os.path.join(DATA_DIR, "email_antworten.csv")
 
 GRAPH = "https://graph.microsoft.com/v1.0"
-SEIT_DATUM = "2025-09-29T00:00:00Z"  # Datum der ersten Bewerbung
+SEIT_DATUM = SEIT_DATUM_DATE.strftime("%Y-%m-%dT00:00:00Z")
 
 # Freie Labels, eines pro Postfach - steuert nur den lokalen Token-Cache-Dateinamen,
 # nicht die eigentliche Konto-Auswahl (die passiert beim Login selbst im Browser).
 POSTFAECHER = ["hauptkonto", "absagen"]
-
-KLASSIFIKATION_KEYWORDS = [
-    ("Absage", [
-        "leider", "abgesagt", "absage", "andere entscheidung", "anderen kandidat",
-        "andere bewerber", "anderweitig besetzt", "nicht berücksichtigen",
-        "nicht weiter berücksichtigen", "keine passende stelle", "entschieden, ihnen",
-        "zu diesem zeitpunkt nicht", "nicht überzeugen", "abstand nehmen",
-        "stelle bereits besetzt", "nicht in die engere auswahl",
-    ]),
-    ("Einladung", [
-        "einladen", "vorstellungsgespräch", "kennenlernen", "gespräch vereinbaren",
-        "interviewtermin", "zum interview", "video-interview", "kennenlerngespräch",
-        "telefonat anbieten", "kurzes telefonat",
-    ]),
-    ("Zwischenbescheid", [
-        "eingegangen", "eingangsbestätigung", "erhalten haben", "unterlagen erhalten",
-        "bedanken uns für ihre bewerbung", "in kürze melden", "wird geprüft",
-        "prüfen ihre unterlagen", "bewerbung ist bei uns eingegangen", "dank für ihre bewerbung",
-        "danke für deine bewerbung", "we have received your application",
-    ]),
-]
-
-
-def classify(subject: str, body: str) -> str:
-    text = f"{subject} {body}".lower()
-    for label, keywords in KLASSIFIKATION_KEYWORDS:
-        if any(kw in text for kw in keywords):
-            return label
-    return "Sonstige"
 
 
 def graph_get(token: str, url: str, retries: int = 3) -> dict:
@@ -122,26 +91,6 @@ def list_messages_in_folder(token: str, folder_id: str) -> list[dict]:
         messages.extend(data["value"])
         url = data.get("@odata.nextLink")
     return messages
-
-
-def lade_firmen() -> list[str]:
-    bew = pd.read_csv(os.path.join(DATA_DIR, "bewerbungen.csv"))
-    firmen = set(bew["firma"].unique())
-    orte = pd.read_csv(os.path.join(DATA_DIR, "firmen_orte.csv")).fillna("")
-    firmen.update(orte["firma"].unique())
-    return sorted(firmen)
-
-
-def finde_firma(absender_name: str, absender_adresse: str, betreff: str, firmen: list[str]) -> str:
-    """Wortgrenzen-Abgleich (nicht reine Teilzeichenkette!) - sonst matchen kurze
-    Firmenkürzel wie 'ETA' oder 'RIS' auch mitten in unbeteiligten Wörtern wie
-    'Sekretariat' oder 'Christian'."""
-    text = _normalize(f"{absender_name} {absender_adresse} {betreff}")
-    for firma in firmen:
-        norm = _normalize(firma)
-        if norm and len(norm) >= 3 and re.search(rf"\b{re.escape(norm)}\b", text):
-            return firma
-    return ""
 
 
 def durchsuche_postfach(account_label: str, firmen: list[str]) -> list[dict]:

@@ -220,6 +220,12 @@ __marimo__/
 # Microsoft Graph OAuth (E-Mail-Zugriff) - Login-Token pro Postfach, nie committen
 .msal_token_cache*.json
 
+# Gmail App-Passwort (E-Mail-Zugriff) - echtes Zugangspasswort, nie committen
+.gmail_credentials.json
+
+# Eigene E-Mail-Adressen (personenbezogen), nie committen
+.eigene_email_adressen.json
+
 # Rohdaten aus dem Postfach (Auszüge, Absenderadressen) - bleiben lokal.
 # Die abgeleitete data/email_status.csv (nur Firma/Status/Datum) wird committet.
 data/email_antworten.csv
