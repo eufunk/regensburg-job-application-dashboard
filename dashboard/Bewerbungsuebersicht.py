@@ -1,6 +1,6 @@
 """Streamlit-Dashboard zur Analyse der Bewerbungen.
 
-Start mit: streamlit run Bewerbungsübersicht.py
+Start mit: streamlit run Bewerbungsuebersicht.py
 """
 
 import os

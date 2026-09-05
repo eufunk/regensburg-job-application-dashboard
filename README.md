@@ -5,7 +5,7 @@ Python-basiertes Dashboard zur Analyse und Visualisierung meiner persönlichen B
 
 ```
 dashboard/                     Die Streamlit-App selbst (nichts anderes)
-  Bewerbungsübersicht.py       Streamlit-Einstiegsseite: Übersicht aller Bewerbungen
+  Bewerbungsuebersicht.py      Streamlit-Einstiegsseite: Übersicht aller Bewerbungen
   pages/
     Firmenliste.py             Zweite Dashboard-Seite: Firmenliste Regensburg & Umgebung
   .streamlit/
@@ -64,7 +64,7 @@ committet und vom Dashboard genutzt (Antwort-Spalte + Farb-Badges auf beiden Sei
 
 ```
 cd dashboard
-streamlit run "Bewerbungsübersicht.py"
+streamlit run Bewerbungsuebersicht.py
 ```
 
 ## Daten aktualisieren

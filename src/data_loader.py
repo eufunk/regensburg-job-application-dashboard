@@ -1,6 +1,6 @@
 """Lädt die exportierten Bewerbungsdaten aus data/bewerbungen.csv.
 
-Diese Datei ist die einzige Datenquelle für Bewerbungsübersicht.py - kein Zugriff auf den
+Diese Datei ist die einzige Datenquelle für Bewerbungsuebersicht.py - kein Zugriff auf den
 lokalen OneDrive-Ordner oder pypdf zur Laufzeit nötig, damit das Dashboard auch öffentlich
 (z.B. Streamlit Community Cloud) deploybar ist. Aktualisiert wird die CSV mit
 `python scripts/export_data.py`.
