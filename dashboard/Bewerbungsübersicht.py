@@ -18,10 +18,24 @@ st.set_page_config(page_title="Bewerbungsdashboard", page_icon="📄", layout="w
 
 st.title("📄 Bewerbungsdashboard Regensburg")
 
+EMAIL_STATUS_CSV = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "email_status.csv"
+)
+
 
 @st.cache_data
 def get_data():
-    return load_bewerbungen()
+    df = load_bewerbungen()
+    if os.path.exists(EMAIL_STATUS_CSV):
+        import pandas as pd
+        status = pd.read_csv(EMAIL_STATUS_CSV)
+        df = df.merge(status, on="firma", how="left")
+    else:
+        df["status"] = None
+        df["letzte_antwort"] = None
+    df["status"] = df["status"].fillna("Keine Antwort")
+    df["letzte_antwort"] = df["letzte_antwort"].fillna("")
+    return df
 
 
 df = get_data()
@@ -44,11 +58,12 @@ if gewaehlte_firma != "Alle":
     gefiltert = gefiltert[gefiltert["firma"] == gewaehlte_firma]
 
 # --- KPIs --------------------------------------------------------------------
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 col1.metric("Gesamtanzahl Bewerbungen", len(gefiltert))
 if not gefiltert.empty:
     col2.metric("Erste Bewerbung", gefiltert["datum"].min().strftime("%d.%m.%Y"))
     col3.metric("Letzte Bewerbung", gefiltert["datum"].max().strftime("%d.%m.%Y"))
+col4.metric("Absagen", int((gefiltert["status"] == "Absage").sum()))
 
 st.divider()
 
@@ -73,12 +88,14 @@ st.divider()
 
 # --- Detailtabelle ---------------------------------------------------------
 st.subheader("Alle Bewerbungen im Detail")
-detail = gefiltert[["datum_str", "firma", "stelle", "kategorie", "region"]].rename(columns={
+detail = gefiltert[["datum_str", "firma", "stelle", "kategorie", "region", "status", "letzte_antwort"]].rename(columns={
     "datum_str": "Datum",
     "firma": "Firma",
     "stelle": "Stelle",
     "kategorie": "Kategorie",
     "region": "Ort",
+    "status": "Antwort",
+    "letzte_antwort": "Antwort-Datum",
 })
 kategorie_optionen = sorted(gefiltert["kategorie"].unique())
 

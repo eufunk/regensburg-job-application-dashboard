@@ -1,0 +1,190 @@
+"""Durchsucht das Hotmail/Outlook-Postfach (via Microsoft Graph) nach E-Mails von
+Firmen aus der Bewerbungsliste und exportiert Absender, Datum, Betreff und eine
+automatische Einordnung (Absage / Einladung / Zwischenbescheid / Sonstige) nach
+data/email_antworten.csv (enthält echte Auszüge/Absenderadressen - bleibt lokal,
+ist in .gitignore).
+
+WICHTIG: Dieses Skript greift auf das echte Postfach zu. NUR auf ausdrücklichen
+Wunsch der Nutzerin ausführen - niemals automatisch/proaktiv, auch nicht als Teil
+einer sonstigen Daten-Aktualisierung.
+
+Nach einem Lauf `python scripts/aggregate_email_status.py` ausführen, um daraus
+die unbedenkliche, fürs Dashboard committete data/email_status.csv abzuleiten.
+
+Beim ersten Ausführen erscheint ein Device-Code-Login (Browser-URL + Code),
+danach läuft der Login automatisch über den lokal gespeicherten Token.
+
+Ausführen (vom Projekt-Root, nur auf Wunsch der Nutzerin!): python scripts/fetch_email_antworten.py
+"""
+
+import os
+import re
+import sys
+import time
+
+import pandas as pd
+import requests
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from src.graph_auth import get_access_token
+from src.firmenliste import _normalize
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+OUTPUT_FILE = os.path.join(DATA_DIR, "email_antworten.csv")
+
+GRAPH = "https://graph.microsoft.com/v1.0"
+SEIT_DATUM = "2025-09-29T00:00:00Z"  # Datum der ersten Bewerbung
+
+KLASSIFIKATION_KEYWORDS = [
+    ("Absage", [
+        "leider", "abgesagt", "absage", "andere entscheidung", "anderen kandidat",
+        "andere bewerber", "anderweitig besetzt", "nicht berücksichtigen",
+        "nicht weiter berücksichtigen", "keine passende stelle", "entschieden, ihnen",
+        "zu diesem zeitpunkt nicht", "nicht überzeugen", "abstand nehmen",
+        "stelle bereits besetzt", "nicht in die engere auswahl",
+    ]),
+    ("Einladung", [
+        "einladen", "vorstellungsgespräch", "kennenlernen", "gespräch vereinbaren",
+        "interviewtermin", "zum interview", "video-interview", "kennenlerngespräch",
+        "telefonat anbieten", "kurzes telefonat",
+    ]),
+    ("Zwischenbescheid", [
+        "eingegangen", "eingangsbestätigung", "erhalten haben", "unterlagen erhalten",
+        "bedanken uns für ihre bewerbung", "in kürze melden", "wird geprüft",
+        "prüfen ihre unterlagen", "bewerbung ist bei uns eingegangen", "dank für ihre bewerbung",
+        "danke für deine bewerbung", "we have received your application",
+    ]),
+]
+
+
+def classify(subject: str, body: str) -> str:
+    text = f"{subject} {body}".lower()
+    for label, keywords in KLASSIFIKATION_KEYWORDS:
+        if any(kw in text for kw in keywords):
+            return label
+    return "Sonstige"
+
+
+def graph_get(token: str, url: str, retries: int = 3) -> dict:
+    headers = {
+        "Authorization": f"Bearer {token}",
+        # Klartext statt HTML fuer den Body, macht die Klassifikation zuverlaessiger
+        "Prefer": 'outlook.body-content-type="text"',
+    }
+    for attempt in range(retries):
+        resp = requests.get(url, headers=headers, timeout=30)
+        if resp.status_code == 429:
+            wait = int(resp.headers.get("Retry-After", "5"))
+            time.sleep(wait)
+            continue
+        resp.raise_for_status()
+        return resp.json()
+    resp.raise_for_status()
+
+
+def list_all_folders(token: str) -> list[dict]:
+    folders = []
+
+    def walk(folder_id=None):
+        base = f"{GRAPH}/me/mailFolders/{folder_id}/childFolders" if folder_id else f"{GRAPH}/me/mailFolders"
+        url = f"{base}?$top=100&includeHiddenFolders=true"
+        while url:
+            data = graph_get(token, url)
+            for f in data["value"]:
+                folders.append(f)
+                walk(f["id"])
+            url = data.get("@odata.nextLink")
+
+    walk()
+    return folders
+
+
+def list_messages_in_folder(token: str, folder_id: str) -> list[dict]:
+    messages = []
+    select = "subject,from,receivedDateTime,body,webLink"
+    url = (
+        f"{GRAPH}/me/mailFolders/{folder_id}/messages"
+        f"?$filter=receivedDateTime ge {SEIT_DATUM}"
+        f"&$select={select}&$top=50"
+    )
+    while url:
+        data = graph_get(token, url)
+        messages.extend(data["value"])
+        url = data.get("@odata.nextLink")
+    return messages
+
+
+def lade_firmen() -> list[str]:
+    bew = pd.read_csv(os.path.join(DATA_DIR, "bewerbungen.csv"))
+    firmen = set(bew["firma"].unique())
+    orte = pd.read_csv(os.path.join(DATA_DIR, "firmen_orte.csv")).fillna("")
+    firmen.update(orte["firma"].unique())
+    return sorted(firmen)
+
+
+def finde_firma(absender_name: str, absender_adresse: str, betreff: str, firmen: list[str]) -> str:
+    """Wortgrenzen-Abgleich (nicht reine Teilzeichenkette!) - sonst matchen kurze
+    Firmenkürzel wie 'ETA' oder 'RIS' auch mitten in unbeteiligten Wörtern wie
+    'Sekretariat' oder 'Christian'."""
+    text = _normalize(f"{absender_name} {absender_adresse} {betreff}")
+    for firma in firmen:
+        norm = _normalize(firma)
+        if norm and len(norm) >= 3 and re.search(rf"\b{re.escape(norm)}\b", text):
+            return firma
+    return ""
+
+
+def main():
+    print("Melde mich bei Microsoft Graph an ...")
+    token = get_access_token()
+
+    firmen = lade_firmen()
+    print(f"{len(firmen)} bekannte Firmen zum Abgleich geladen.")
+
+    print("Liste alle Postfach-Ordner auf ...")
+    folders = list_all_folders(token)
+    print(f"{len(folders)} Ordner gefunden, durchsuche jeden nach E-Mails seit {SEIT_DATUM} ...")
+
+    treffer = []
+    for folder in folders:
+        messages = list_messages_in_folder(token, folder["id"])
+        for msg in messages:
+            absender = msg.get("from", {}).get("emailAddress", {}) or {}
+            absender_name = absender.get("name", "")
+            absender_adresse = absender.get("address", "")
+            betreff = msg.get("subject", "") or ""
+
+            firma = finde_firma(absender_name, absender_adresse, betreff, firmen)
+            if not firma:
+                continue
+
+            body = (msg.get("body", {}) or {}).get("content", "") or ""
+            body_clean = re.sub(r"\s+", " ", body).strip()
+            treffer.append({
+                "firma": firma,
+                "datum": msg.get("receivedDateTime", ""),
+                "ordner": folder.get("displayName", ""),
+                "absender_name": absender_name,
+                "absender_adresse": absender_adresse,
+                "betreff": betreff,
+                "klassifikation": classify(betreff, body_clean),
+                "auszug": body_clean[:500],
+            })
+
+    df = pd.DataFrame(treffer)
+    if not df.empty:
+        df["datum"] = pd.to_datetime(df["datum"]).dt.tz_localize(None)
+        df = df.sort_values("datum")
+
+    os.makedirs(DATA_DIR, exist_ok=True)
+    df.to_csv(OUTPUT_FILE, index=False, encoding="utf-8")
+
+    print(f"{len(df)} passende E-Mails gefunden, exportiert nach {OUTPUT_FILE}")
+    if not df.empty:
+        print(df["klassifikation"].value_counts().to_string())
+
+
+if __name__ == "__main__":
+    main()
