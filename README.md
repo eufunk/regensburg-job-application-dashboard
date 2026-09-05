@@ -5,22 +5,25 @@ Python-basiertes Dashboard zur Analyse und Visualisierung meiner persönlichen B
 
 ```
 dashboard/                     Die Streamlit-App selbst (nichts anderes)
-  Bewerbungsübersicht.py       Streamlit-Einstiegsseite
+  Bewerbungsübersicht.py       Streamlit-Einstiegsseite: Übersicht aller Bewerbungen
   pages/
-    Firmenliste.py             Zweite Dashboard-Seite (Streamlit-Konvention: "pages/" neben der Einstiegsseite)
+    Firmenliste.py             Zweite Dashboard-Seite: Firmenliste Regensburg & Umgebung
   .streamlit/
     config.toml                Theme-Einstellungen
-src/                           Wiederverwendbare Python-Module (Datenaufbereitung)
+src/                           Wiederverwendbare Python-Module (Datenaufbereitung + UI-Bausteine)
   bewerbungen.py                Liest Anschreiben-PDFs aus OneDrive, extrahiert Firma/Stelle/Datum/Ort
   firmenliste.py                Parst die handgepflegte Firmenliste (Firmen_Softwareentwicklung.txt)
   firmen_orte.py                Pflegt data/firmen_orte.csv (Firma -> recherchierter Ort)
   data_loader.py                Lädt data/bewerbungen.csv fürs Dashboard
-  graph_auth.py                 OAuth-Login (Microsoft Graph) fürs Postfach, Device-Code-Flow
+  dashboard_ui.py                Gemeinsame Status-Farben/-Badges (AG-Grid) für beide Dashboard-Seiten
+  email_matching.py              Gemeinsame Firmen-Abgleich-/Klassifikationslogik für alle Postfach-Skripte
+  graph_auth.py                  OAuth-Login (Microsoft Graph) fürs Hotmail/Outlook-Postfach, Device-Code-Flow
 scripts/                       Ausführbare Skripte zum Aktualisieren der Daten
   export_data.py                OneDrive -> data/bewerbungen.csv
   export_firmenliste.py         OneDrive -> data/firmenliste.csv + data/weitere_bewerbungen.csv
   update_firmen_orte.py         Neue Firmen in data/firmen_orte.csv ergänzen
-  fetch_email_antworten.py      Postfach -> data/email_antworten.csv (lokal, siehe unten!)
+  fetch_email_antworten.py      Hotmail-Postfächer -> data/email_antworten.csv (lokal, siehe unten!)
+  fetch_gmail_antworten.py      Gmail-Postfach -> data/email_antworten.csv (lokal, siehe unten!)
   aggregate_email_status.py     data/email_antworten.csv -> data/email_status.csv (unbedenklich, committet)
   generate_bewerbungsgeschichte.py  Erzeugt docs/Bewerbungsgeschichte.docx
 notebooks/
@@ -32,14 +35,30 @@ data/                           Exportierte CSVs (Datenquelle des Dashboards, ke
 
 ### Postfach-Abgleich (E-Mail-Antworten)
 
-`scripts/fetch_email_antworten.py` durchsucht das Hotmail-Postfach nach Antworten
-der Firmen aus der Bewerbungsliste. **Wird nur auf ausdrücklichen Wunsch ausgeführt,
-niemals automatisch.** Das Ergebnis (`data/email_antworten.csv`) enthält echte
-E-Mail-Auszüge und Absenderadressen und bleibt deshalb lokal (`.gitignore`).
+Drei Postfächer werden abgeglichen: zwei Hotmail-Konten (`scripts/fetch_email_antworten.py`,
+via Microsoft Graph) und ein Gmail-Konto (`scripts/fetch_gmail_antworten.py`, via IMAP +
+App-Passwort). Beide suchen nach E-Mails von Firmen aus der Bewerbungsliste und
+klassifizieren die Antwort automatisch (Absage / Einladung / Zwischenbescheid / Sonstige).
+Bekannte Job-Portal-Newsletter (Indeed, LinkedIn, Xing, StepStone) und eigene Adressen
+werden dabei ausgeschlossen, auch wenn ein Firmenname darin zufällig vorkommt.
 
-`scripts/aggregate_email_status.py` leitet daraus die unbedenkliche
-`data/email_status.csv` ab (nur Firma/Status/Datum, keine Auszüge) - die wird
-committet und vom Dashboard genutzt.
+**Wird nur auf ausdrücklichen Wunsch ausgeführt, niemals automatisch** - beide Skripte
+greifen auf das echte Postfach zu.
+
+Das Ergebnis (`data/email_antworten.csv`) enthält echte E-Mail-Auszüge und
+Absenderadressen und bleibt deshalb lokal (`.gitignore`). Danach
+`python scripts/aggregate_email_status.py` ausführen: leitet daraus die unbedenkliche
+`data/email_status.csv` ab (nur Firma/Status/Datum/Anzahl, keine Auszüge) - die wird
+committet und vom Dashboard genutzt (Antwort-Spalte + Farb-Badges auf beiden Seiten).
+
+**Lokale, gitignorete Zugangsdaten** (nie committen, jede Datei hat eine eigene
+`.gitignore`-Regel):
+- `.msal_token_cache_<konto>.json` - Microsoft-Graph-Login-Token, ein Konto pro Datei
+  (Labels in `POSTFAECHER` in `fetch_email_antworten.py`)
+- `.gmail_credentials.json` - `{"email": "...", "app_password": "..."}`,
+  App-Passwort erzeugen unter https://myaccount.google.com/apppasswords (erfordert 2FA)
+- `.eigene_email_adressen.json` - eigene E-Mail-Adressen als JSON-Liste, damit eigene
+  (weitergeleitete/gesendete) Mails nicht als Firmen-Antwort zählen
 
 ## Starten
 
@@ -56,4 +75,12 @@ Nach neuen Bewerbungen bzw. Änderungen an der Firmenliste (vom Projekt-Root):
 python scripts/export_data.py
 python scripts/export_firmenliste.py
 python scripts/update_firmen_orte.py
+```
+
+Postfächer abgleichen (nur auf eigenen Wunsch, siehe oben):
+
+```
+python scripts/fetch_email_antworten.py
+python scripts/fetch_gmail_antworten.py
+python scripts/aggregate_email_status.py
 ```

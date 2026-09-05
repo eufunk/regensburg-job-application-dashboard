@@ -13,6 +13,9 @@ from st_aggrid import AgGrid, DataReturnMode, GridOptionsBuilder, JsCode
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.data_loader import load_bewerbungen
+from src.dashboard_ui import (
+    STATUS_FARBEN, STATUS_REIHENFOLGE, ANTWORT_ICON_FORMATTER, ANTWORT_CELL_STYLE,
+)
 
 st.set_page_config(page_title="Bewerbungsdashboard", page_icon="📄", layout="wide")
 
@@ -67,12 +70,24 @@ col4.metric("Absagen", int((gefiltert["status"] == "Absage").sum()))
 
 st.divider()
 
-# --- Bewerbungen pro Monat -----------------------------------------------------
-st.subheader("Bewerbungen pro Monat")
-pro_monat = gefiltert.groupby("monat").size().reset_index(name="anzahl").sort_values("monat")
+# --- Bewerbungen pro Monat, nach Antwort-Status --------------------------------
+st.subheader("Bewerbungen pro Monat, nach Antwort-Status")
 
-fig = px.bar(pro_monat, x="monat", y="anzahl", text="anzahl", color_discrete_sequence=["#2563EB"])
-fig.update_layout(xaxis_title="Monat", yaxis_title="Anzahl Bewerbungen", showlegend=False)
+pro_monat_status = gefiltert.groupby(["monat", "status"]).size().reset_index(name="anzahl")
+
+fig = px.bar(
+    pro_monat_status,
+    x="monat",
+    y="anzahl",
+    color="status",
+    color_discrete_map=STATUS_FARBEN,
+    category_orders={"monat": sorted(gefiltert["monat"].unique()), "status": STATUS_REIHENFOLGE},
+)
+fig.update_traces(marker_line_color="white", marker_line_width=1)
+fig.update_layout(
+    xaxis_title="Monat", yaxis_title="Anzahl Bewerbungen",
+    legend_title_text="Antwort-Status", barmode="stack",
+)
 st.plotly_chart(fig, use_container_width=True)
 
 st.divider()
@@ -139,6 +154,7 @@ kategorie_floating_filter = JsCode(
 gb = GridOptionsBuilder.from_dataframe(detail)
 gb.configure_default_column(filter="agTextColumnFilter", floatingFilter=True, sortable=True, resizable=True)
 gb.configure_column("Kategorie", floatingFilterComponent=kategorie_floating_filter, suppressMenu=True)
+gb.configure_column("Antwort", valueFormatter=ANTWORT_ICON_FORMATTER, cellStyle=ANTWORT_CELL_STYLE)
 gb.configure_column("Stelle", flex=2)
 
 grid_response = AgGrid(
