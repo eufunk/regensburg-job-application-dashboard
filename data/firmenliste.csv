@@ -1,0 +1,44 @@
+status,datum,firma,ort,art,schwerpunkt,notizen,rueckmeldung,anzahl_bewerbungen,beworbene_stellen,grund
+BEWORBEN,11.08.2026,trinnovative GmbH,Regensburg,Initiativbewerbung,"C#/.NET, Software, Cloud, KI",,❌ Absage,0,,
+BEWORBEN,11.08.2026,OneVision Software AG,Regensburg,Initiativbewerbung,"C#/.NET, Software, Automation",,,0,,
+BEWORBEN,11.08.2026,iS Software GmbH / Kraftwerk.io,Regensburg,Initiativbewerbung,"C#/.NET, Software, Daten",,,0,,
+BEWORBEN,11.08.2026,Vector Informatik GmbH,Regensburg,Initiativbewerbung,"C#/.NET, technische Software",Automatisierung,❌ Absage,0,,
+BEWORBEN,12.08.2026,GEFASOFT,Regensburg,Initiativbewerbung,"C#/.NET, Python, Automation",Sehr passend,,3,Softwareentwicklerin (06.10.2025); Softwareentwicklerin C# / .NET (m/w/d) (14.05.2026); Softwareentwicklerin C#/.NET (12.08.2026),
+BEWORBEN,12.08.2026,OptWare,Regensburg,Initiativbewerbung,"Software, Data, KI",,❌ Absage,1,"Softwareentwicklerin – C#/.NET, Python & Data Analytics (12.08.2026)",
+BEWORBEN,12.08.2026,knowis AG,Regensburg,Initiativbewerbung,"Software, Cloud, KI",,❌ Absage,1,"Softwareentwicklerin – C#/.NET, Python & Data Analytics (12.08.2026)",
+BEWORBEN,12.08.2026,AVL Software and Functions GmbH,Regensburg,Ausbildung / Anfrage,"Data, Python, Automation",2 J. Umschulung / 1 J. Trainee möglich,❌ Absage,1,Fachinformatikerin für Daten- und Prozessanalyse – Autonomous Mobility (13.08.2026),
+BEWORBEN,14.08.2026,ARINNAU GmbH,Regensburg,Bewerbung,"Testing, C#/.NET, Python",Professional/Senior Tester,,1,Softwaretester / Testautomatisierer (m/w/d) (14.08.2026),
+BEWORBEN,14.08.2026,ASMPT AMICRA GmbH,Regensburg,Initiativbewerbung,"C#/.NET, Testing, Automation",Entwickler / Tester / Produktion / Trainee,❌ Absage,3,IT Solution Specialist (m/w/d) (24.07.2026); Software-Entwickler/in C# / C++ (m/w/d) (31.07.2026); – Softwareentwicklung / Softwaretesting / technische Funktionen (14.08.2026),
+BEWORBEN,14.08.2026,Bavaria Systems GmbH,Regensburg,Bewerbung,"Python, Web, Django, Backend",Programmierer; Trainee möglich,,1,Programmiererin (Web / Python / Django) (14.08.2026),
+BEWORBEN,20.08.2026,Valentum Engineering GmbH,Regensburg,Initiativbewerbung,"C#/.NET, Testing, Automation",★ Sehr passend,,1,"Softwareentwicklerin / Softwaretesterin – C#/.NET, Automatisierung & technische Software (20.08.2026)",
+BEWORBEN,20.08.2026,evopro systems engineering AG,Regensburg,Initiativbewerbung,"C#/.NET, Testing, Automation Support, SPS/SCL",★★★★★ Sehr passend; auch technischer Support,,2,"Softwareentwicklerin (06.10.2025); Softwareentwicklerin / Softwaretesterin / IT- Support – C#/.NET, Automatisierung und technische Software (20.08.2026)",
+BEWORBEN,20.08.2026,Maschinenfabrik Reinhausen GmbH,Regensburg,Initiativbewerbung,"Software, Testing, Automatisierung, Python",★ Sehr interessant Systemtest & Automatisierung,,3,"Softwareentwicklerin für eine Prüfplattform (m/w/d) (12.05.2026); im Bereich IT, Softwareentwicklung und Digitalisierung (07.06.2026); Softwareentwicklerin / Testerin – Automatisierung & Systemtest (20.08.2026)",
+BEWORBEN,20.08.2026,SYSTEMA Projekte,Regensburg,Initiativbewerbung,"Software, SAP, Support","Junior SAP/Softwareentwicklung; ABAP/SAP neu, Einarbeitung",,2,Softwareentwicklerin (m/w/d) (05.02.2026); Softwareentwicklerin / Junior-SAP-Entwicklerin (20.08.2026),
+BEWORBEN,20.08.2026,TAPKO Technologies GmbH,Regensburg,Initiativbewerbung,"Automation, Software, Technik",★ Sehr interessant; auch Trainee,,1,Softwareentwicklerin / Softwaretesterin – Automatisierung & technische Software (20.08.2026),
+BEWORBEN,25.08.2026,System Logistics GmbH,Wackersdorf,Bewerbung,"C#/.NET, Software, Testautomatisierung, Automation",★★★★★ Sehr passend; konkrete Junior-Stelle,,0,,
+NOCH NICHT,,Eibl-IT GmbH,Regensburg,Initiativbewerbung,"IT, Software",Noch prüfen,,0,,
+NOCH NICHT,,Automatisierungstechnik Meier,Regensburg,Initiativbewerbung,Automatisierung,Technischer Bereich,,0,,
+NOCH NICHT,,G-Automatisierung GmbH,Regensburg,Initiativbewerbung,Automatisierung,Technischer Bereich,,0,,
+NOCH NICHT,05.09.2026,proLogistik,Regensburg,Bewerbung,"C#/.NET, Intralogistik Software",★★★★★ Sehr passend; C# und industrielle Software,,1,Softwareentwicklerin C# für die Intralogistik (m/w/d) (21.08.2026),
+NOCH NICHT,05.09.2026,GRODE Engineering GmbH & Co. KG,Neutraubling,Bewerbung,"Siemens SPS, TIA Portal Automatisierung",★★★★ Interessant; Siemens-/ SCL-Erfahrung vorhanden,,0,,
+NOCH NICHT,05.09.2026,amaxo GmbH,Regensburg,Bewerbung,"SPS, S7, TIA Portal",★★★★ Interessant; Automatisie- rungsausbildung passt,,0,,
+NOCH NICHT,05.09.2026,Reng Industriesysteme GmbH,Regensburg,Bewerbung,"SPS, Automatisierung",★★★ Möglich; stärker Elektro- technik/SPS-lastig,,0,,
+NOCH NICHT,05.09.2026,Neumüller Personalberatung Regina Neumüller e.K.,Regensburg,Bewerbung,"SPS, Industrie 4.0",★★★ Interessant; Teilzeit möglich,,1,SPS Programmiererin (w/m/d) Industrie 4.0 (19.08.2026),
+NOCH NICHT,05.09.2026,Allgeier IT GmbH,Regensburg,Bewerbung,".NET, Softwareentwicklung",★★★★★ Sehr passend; bis zu 80 % Homeoffice,,1,NET Entwickler (m/w/d) (04.06.2026),
+NOCH NICHT,05.09.2026,InCore Bank AG,Regensburg,Bewerbung,"Full-Stack, Software",★★★★ Prüfen; aktuelle Full-Stack-Kenntnisse,,1,Umschulung Fachinformatikerin Anwendungsentwicklung (05.02.2026),
+NICHT WEITER VERFOLGEN,05.09.2026,Tiwo IT Solutions GmbH,Regensburg,--,"IT, Software",Keine passende aktuelle Stelle bzw. kein konkreter Bedarf erkennbar,,0,,Kein aktueller Bedarf
+NICHT WEITER VERFOLGEN,05.09.2026,WAYT AG,Regensburg,--,"IT, Software, Beratung",Keine passende aktuelle Stelle für mein Profil; BPM/Camunda Erfahrung fehlt,,0,,Profil passt nicht
+NICHT WEITER VERFOLGEN,05.09.2026,ANUMA,Regensburg,--,"Software, IT-Beratung",Keine passende aktuelle Stelle / keine Priorität,,0,,Keine Priorität
+NICHT WEITER VERFOLGEN,05.09.2026,369 Studio,Regensburg,--,"Software, KI",Aktuell keine passende Stelle / suchen derzeit niemanden,,0,,Kein aktueller Bedarf
+NICHT WEITER VERFOLGEN,26.08.2026,Matnamics Automatisierungstechnik,Regensburg,--,Automatisierungstechnik,Keine passende Stelle / keine Karriereseite; aktuell nicht sinnvoll,,0,,Kein Karriereportal
+NICHT WEITER VERFOLGEN,26.08.2026,B&R Industrie-Elektronik GmbH,Regensburg,--,"Automatisierung, Software, Testing",Keine passende Stelle in Regensburg; Initiativbewerbung aktuell nicht sinnvoll,,0,,Kein aktueller Bedarf
+NICHT WEITER VERFOLGEN,24.08.2026,Bechtle IT-Systemhaus,Regensburg,--,"IT, Software, Infrastruktur",Keine passende Stelle gefunden; daher nicht weiterverfolgen,,0,,Kein aktueller Bedarf
+NICHT WEITER VERFOLGEN,24.08.2026,cs concept GmbH,Regensburg,--,Softwareentwicklung,Aktuell keine passende Entwicklerstelle; vorhandene Stelle passt nicht zum Profil,,0,,Profil passt nicht
+NICHT WEITER VERFOLGEN,,Comsysto Reply GmbH,Regensburg,--,"Software, Cloud, AI",Aktuelle Stellen zu anspruchs- voll; derzeit nicht passend,,0,,Profil passt nicht
+NICHT WEITER VERFOLGEN,,Allgeier Public SE,München,--,"C#/.NET, Software, Data, KI",Keine passende Stelle für Regensburg; keine passende Initiativmöglichkeit,,1,NET Entwickler (m/w/d) (04.06.2026),Falscher Standort
+NICHT WEITER VERFOLGEN,,Sparrow Analytics GmbH,Regensburg,--,"C#/.NET, Daten, Software",Keine Karriereseite,,0,,Kein Karriereportal
+NICHT WEITER VERFOLGEN,,PYLABS GmbH,Regensburg,--,"Python, Data, IoT",Keine Karriereseite,,0,,Kein Karriereportal
+NICHT WEITER VERFOLGEN,,RIS Web- & Software-Development,Regensburg,--,"C#/.NET, Softwareentwicklung",Kein Karrierebereich,,1,Fachinformatikerin Anwendungsentwicklung (05.02.2026),Kein Karriereportal
+NICHT WEITER VERFOLGEN,,CipSoft,Regensburg,--,Spieleentwicklung,Gaming – nicht dein Bereich,,0,,Fachlich nicht passend
+NICHT WEITER VERFOLGEN,,TGW Logistics,Regensburg,--,"C#/.NET, Software, Automation","3 Bewerbungen, 3x abgelehnt nicht erneut bewerben",,0,,Bereits mehrfach abgelehnt
+BEWORBEN,14.08.2026,dainox GmbH,Remote,Bewerbung,"C#/.NET, Backend, Python, API",Remote bundesweit,,0,,
