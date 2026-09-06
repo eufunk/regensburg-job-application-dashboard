@@ -31,12 +31,30 @@ scripts/                       Ausführbare Skripte zum Aktualisieren der Daten
   fetch_gmail_antworten.py      Gmail-Postfach -> data/email_antworten.csv (lokal, siehe unten!)
   aggregate_email_status.py     data/email_antworten.csv -> data/email_status.csv (unbedenklich, committet)
   generate_bewerbungsgeschichte.py  Erzeugt docs/Bewerbungsgeschichte.docx
+  export_api_json.py            data/bewerbungen.csv + email_status.csv -> data/api/*.json (statische Mini-API)
 notebooks/
   bewerbungsanalyse.ipynb       Ursprüngliche explorative Analyse
 docs/
   Bewerbungsgeschichte.docx     Erzählende Rückschau auf alle Bewerbungen
 data/                           Exportierte CSVs (Datenquelle des Dashboards, keine PDFs/Pfade)
+  api/                          Statische JSON-Exporte für andere Projekte (siehe unten)
 ```
+
+### Statische JSON-"API" für andere Projekte
+
+`python scripts/export_api_json.py` schreibt `data/api/bewerbungen.json` (eine Zeile
+pro Bewerbung: Datum/Firma/Stelle/Kategorie/Ort/Antwort) und `data/api/firmen.json`
+(eine Zeile pro Firma: Anzahl Bewerbungen + aktueller Antwort-Status). Beide werden
+committet und lassen sich aus jedem anderen Projekt einfach per HTTP-GET auf die
+rohe GitHub-URL abrufen, ganz ohne eigenen Server:
+
+```
+https://raw.githubusercontent.com/eufunk/regensburg-job-application-dashboard/main/data/api/bewerbungen.json
+https://raw.githubusercontent.com/eufunk/regensburg-job-application-dashboard/main/data/api/firmen.json
+```
+
+Aktualisiert sich nicht automatisch - nach `export_data.py`/`aggregate_email_status.py`
+auch `export_api_json.py` erneut ausführen und committen/pushen.
 
 ### Bewerbungen ohne PDF (manuelle Ergänzung)
 
@@ -108,4 +126,10 @@ Postfächer abgleichen (nur auf eigenen Wunsch, siehe oben):
 python scripts/fetch_email_antworten.py
 python scripts/fetch_gmail_antworten.py
 python scripts/aggregate_email_status.py
+```
+
+JSON-Export für andere Projekte aktualisieren (nach den obigen Schritten):
+
+```
+python scripts/export_api_json.py
 ```

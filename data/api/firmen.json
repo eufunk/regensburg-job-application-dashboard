@@ -1,0 +1,726 @@
+{
+  "stand": "2026-09-06",
+  "gesamt_anzahl_firmen": 120,
+  "firmen": [
+    {
+      "firma": "Acadoro",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-06-15"
+    },
+    {
+      "firma": "ADVERGYGmbH",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Aide",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-09-03"
+    },
+    {
+      "firma": "Akkodis",
+      "anzahl_bewerbungen": 2,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-08-26"
+    },
+    {
+      "firma": "Alfatraining",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2025-10-29"
+    },
+    {
+      "firma": "Allgeier",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Zwischenbescheid",
+      "letzte_antwort": "2026-06-24"
+    },
+    {
+      "firma": "Alphatrail",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Zwischenbescheid",
+      "letzte_antwort": "2026-05-04"
+    },
+    {
+      "firma": "APIS",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "ARINNAU",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "ASMPT",
+      "anzahl_bewerbungen": 3,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-09-02"
+    },
+    {
+      "firma": "Attek",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2025-09-29"
+    },
+    {
+      "firma": "audaris",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-08-24"
+    },
+    {
+      "firma": "AVL Software",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Bavaria",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Brunel",
+      "anzahl_bewerbungen": 2,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-05-24"
+    },
+    {
+      "firma": "CADOSYS",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "CALConsult",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "citema",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "CodeCompass",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Debeka",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-06-24"
+    },
+    {
+      "firma": "Duvenbeck",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Zwischenbescheid",
+      "letzte_antwort": "2026-04-25"
+    },
+    {
+      "firma": "EA",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Eckert Schulen",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Sonstige",
+      "letzte_antwort": "2026-09-02"
+    },
+    {
+      "firma": "Eduvation IT Services",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Eibl-IT",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "ETA",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Zwischenbescheid",
+      "letzte_antwort": "2026-07-22"
+    },
+    {
+      "firma": "evopro",
+      "anzahl_bewerbungen": 2,
+      "antwort": "Zwischenbescheid",
+      "letzte_antwort": "2026-08-20"
+    },
+    {
+      "firma": "eWorks",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-05-15"
+    },
+    {
+      "firma": "Fels-Werke",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Sonstige",
+      "letzte_antwort": "2026-05-26"
+    },
+    {
+      "firma": "FERCHAU",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Sonstige",
+      "letzte_antwort": "2026-09-03"
+    },
+    {
+      "firma": "FinanzIT",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "FIOSYSTEMS",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "FNTIO",
+      "anzahl_bewerbungen": 2,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-06-01"
+    },
+    {
+      "firma": "fuljoyment",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-08-24"
+    },
+    {
+      "firma": "GEFASOFT",
+      "anzahl_bewerbungen": 2,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-08-25"
+    },
+    {
+      "firma": "Gefasoft",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "GEVAS",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-03-23"
+    },
+    {
+      "firma": "GFN",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "GUS",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-02-25"
+    },
+    {
+      "firma": "Hallo Welt",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Zwischenbescheid",
+      "letzte_antwort": "2026-05-26"
+    },
+    {
+      "firma": "Hallowelt",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "HAPEKO",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-01-07"
+    },
+    {
+      "firma": "Harris",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "HiQ",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-06-03"
+    },
+    {
+      "firma": "Hypoport",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2025-10-02"
+    },
+    {
+      "firma": "ibi systems GmbH",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-05-13"
+    },
+    {
+      "firma": "IEMTEC",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Sonstige",
+      "letzte_antwort": "2026-06-01"
+    },
+    {
+      "firma": "ILS-Industrie",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "InCore",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Incore Asset Management Solution AG",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "IndustrialAnalyticsLab",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "INFOMOTION",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2025-11-26"
+    },
+    {
+      "firma": "InfoTip",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Sonstige",
+      "letzte_antwort": "2025-10-21"
+    },
+    {
+      "firma": "INSYS",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-06-22"
+    },
+    {
+      "firma": "Intend",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2025-10-23"
+    },
+    {
+      "firma": "IQVIA",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Sonstige",
+      "letzte_antwort": "2025-11-11"
+    },
+    {
+      "firma": "iSSoftware",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "IVU",
+      "anzahl_bewerbungen": 2,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "IVUSoftwareentwicklungGmbH",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "KA Resources",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Kaupa",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-08-28"
+    },
+    {
+      "firma": "Klärwerk",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-06-17"
+    },
+    {
+      "firma": "knowis",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Sonstige",
+      "letzte_antwort": "2026-08-19"
+    },
+    {
+      "firma": "KRONES",
+      "anzahl_bewerbungen": 2,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-09-01"
+    },
+    {
+      "firma": "Krones",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Landkreis",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Sonstige",
+      "letzte_antwort": "2026-06-19"
+    },
+    {
+      "firma": "Lersch",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "LinoPro",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-01-05"
+    },
+    {
+      "firma": "MEDIFOX",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Meierhofer",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-08-06"
+    },
+    {
+      "firma": "Motus",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-06-17"
+    },
+    {
+      "firma": "n-komm",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-02-24"
+    },
+    {
+      "firma": "Neumeier",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-04-02"
+    },
+    {
+      "firma": "Neumueller",
+      "anzahl_bewerbungen": 2,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-08-19"
+    },
+    {
+      "firma": "Neumüller",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Nexis",
+      "anzahl_bewerbungen": 2,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-04-01"
+    },
+    {
+      "firma": "niwadev",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2025-12-01"
+    },
+    {
+      "firma": "officepeople",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "OPTITOOL",
+      "anzahl_bewerbungen": 3,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-08-25"
+    },
+    {
+      "firma": "OptWare",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-08-17"
+    },
+    {
+      "firma": "PassionforPeople",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-05-18"
+    },
+    {
+      "firma": "Piening",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Zwischenbescheid",
+      "letzte_antwort": "2026-01-06"
+    },
+    {
+      "firma": "PostHog",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "proLogistik",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-08-24"
+    },
+    {
+      "firma": "RADAS",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Zwischenbescheid",
+      "letzte_antwort": "2026-09-04"
+    },
+    {
+      "firma": "Raiffeisenbank",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-06-12"
+    },
+    {
+      "firma": "Randstad",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Sonstige",
+      "letzte_antwort": "2026-06-12"
+    },
+    {
+      "firma": "Reinhausen",
+      "anzahl_bewerbungen": 3,
+      "antwort": "Zwischenbescheid",
+      "letzte_antwort": "2026-08-20"
+    },
+    {
+      "firma": "RHAPSODY",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2025-11-28"
+    },
+    {
+      "firma": "RIS",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Rockstardevelopers",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Rodday",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-04-29"
+    },
+    {
+      "firma": "ROPA",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2025-11-17"
+    },
+    {
+      "firma": "Scandio",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Schapfl",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "SCHÄFER",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Sonstige",
+      "letzte_antwort": "2026-08-29"
+    },
+    {
+      "firma": "SIITechnologiesGmbH",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "sixaAG",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Skalbach",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-05-20"
+    },
+    {
+      "firma": "SOG",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-05-26"
+    },
+    {
+      "firma": "Sparda",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-07-23"
+    },
+    {
+      "firma": "Sparda-Bank",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "SpardaBank",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "StadtRegensburg",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Syskron",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "SYSTEMA",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-08-26"
+    },
+    {
+      "firma": "systema",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "SystemLogistics",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "TAPKO",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "TECVIA",
+      "anzahl_bewerbungen": 2,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-07-06"
+    },
+    {
+      "firma": "Tecvia",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Trenkwalder",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Treukontax",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-06-16"
+    },
+    {
+      "firma": "Valentum",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "Vektor",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "VerlagHerder",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Keine Antwort",
+      "letzte_antwort": null
+    },
+    {
+      "firma": "VESTERLING",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Absage",
+      "letzte_antwort": "2026-01-07"
+    },
+    {
+      "firma": "WattFox",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Sonstige",
+      "letzte_antwort": "2025-12-01"
+    },
+    {
+      "firma": "zeitconcept",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Zwischenbescheid",
+      "letzte_antwort": "2026-08-29"
+    },
+    {
+      "firma": "­ experts",
+      "anzahl_bewerbungen": 1,
+      "antwort": "Einladung",
+      "letzte_antwort": "2026-05-19"
+    }
+  ]
+}

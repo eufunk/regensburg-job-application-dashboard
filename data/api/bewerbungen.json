@@ -1,0 +1,1230 @@
+{
+  "stand": "2026-09-06",
+  "gesamt_anzahl": 136,
+  "bewerbungen": [
+    {
+      "datum": "2025-09-29",
+      "firma": "TECVIA",
+      "stelle": "Frontend Developer (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-07-06"
+    },
+    {
+      "datum": "2025-09-29",
+      "firma": "Attek",
+      "stelle": "Junior Fullstack Entwickler",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Berlin",
+      "antwort": "Absage",
+      "antwort_datum": "2025-09-29"
+    },
+    {
+      "datum": "2025-09-29",
+      "firma": "Intend",
+      "stelle": "Mobile-Developer C#/.NET (m/w/d) – 100 % Remote",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Kassel",
+      "antwort": "Absage",
+      "antwort_datum": "2025-10-23"
+    },
+    {
+      "datum": "2025-09-29",
+      "firma": "FIOSYSTEMS",
+      "stelle": "C# Backend Software Entwickler (remote)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Leipzig",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2025-10-06",
+      "firma": "ADVERGYGmbH",
+      "stelle": "(Senior) C#/.NET Fullstack Entwickler (m/w/d) – Ref. OPP-25-09-03909",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Hamburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2025-10-06",
+      "firma": "GEFASOFT",
+      "stelle": "Softwareentwicklerin",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-25"
+    },
+    {
+      "datum": "2025-10-06",
+      "firma": "evopro",
+      "stelle": "Softwareentwicklerin",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Zwischenbescheid",
+      "antwort_datum": "2026-08-20"
+    },
+    {
+      "datum": "2025-10-07",
+      "firma": "SIITechnologiesGmbH",
+      "stelle": "Software Developer C# / .NET (m/w/x)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2025-10-09",
+      "firma": "Alfatraining",
+      "stelle": "Softwareentwicklerin C# (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Karlsruhe",
+      "antwort": "Absage",
+      "antwort_datum": "2025-10-29"
+    },
+    {
+      "datum": "2025-10-13",
+      "firma": "Krones",
+      "stelle": "Automatisierungs- /Softwareingenieur (m/w/d) mit Schwerpunkt Robotik Referenznummer: 2025-1189",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Neutraubling",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2025-10-20",
+      "firma": "CodeCompass",
+      "stelle": "NET Software Engineer (m/w/d) – remote",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Remote",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2025-10-20",
+      "firma": "GFN",
+      "stelle": "Trainee IT-Ausbilderin (m/w/x) – GFN GmbH",
+      "kategorie": "Trainee",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2025-10-21",
+      "firma": "InfoTip",
+      "stelle": "Backend-Developer (all genders)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Bochum",
+      "antwort": "Sonstige",
+      "antwort_datum": "2025-10-21"
+    },
+    {
+      "datum": "2025-10-21",
+      "firma": "IQVIA",
+      "stelle": "Softwareentwicklerin C#/.NET (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Frankfurt am Main",
+      "antwort": "Sonstige",
+      "antwort_datum": "2025-11-11"
+    },
+    {
+      "datum": "2025-10-23",
+      "firma": "Kaupa",
+      "stelle": "C# Entwicklerin – Homeoffice",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Remscheid",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-28"
+    },
+    {
+      "datum": "2025-10-24",
+      "firma": "FinanzIT",
+      "stelle": "KI-Engineer (m/w/d) beim Landesamt für Finanzen – FinanzIT BAYERN",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2025-10-24",
+      "firma": "Hallowelt",
+      "stelle": "Softwaretester:in (Teilzeit, Home Office bevorzugt)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2025-10-28",
+      "firma": "ROPA",
+      "stelle": "Fachinformatiker Anwendungsentwicklung (m/w/d) bei ROPA am Standort TechBase Regensburg",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Sittelsdorf",
+      "antwort": "Absage",
+      "antwort_datum": "2025-11-17"
+    },
+    {
+      "datum": "2025-10-29",
+      "firma": "EA",
+      "stelle": "Softwareentwicklerin für individuelle Lösungen (m/w/d) – Kennziffer J26707",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Düsseldorf",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2025-10-29",
+      "firma": "Lersch",
+      "stelle": "Full Stack C# / .NET Developer (m/f/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2025-10-30",
+      "firma": "niwadev",
+      "stelle": "Softwareentwicklerin C#/.NET",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Augsburg",
+      "antwort": "Absage",
+      "antwort_datum": "2025-12-01"
+    },
+    {
+      "datum": "2025-11-14",
+      "firma": "HAPEKO",
+      "stelle": "Junior Software-Entwickler .NET / C#",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-01-07"
+    },
+    {
+      "datum": "2025-11-19",
+      "firma": "RHAPSODY",
+      "stelle": "Junior Software-Entwickler .NET / C#",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Rheine",
+      "antwort": "Absage",
+      "antwort_datum": "2025-11-28"
+    },
+    {
+      "datum": "2025-11-19",
+      "firma": "INFOMOTION",
+      "stelle": "Trainee im Bereich Data & Analytics",
+      "kategorie": "Trainee",
+      "region": "Frankfurt am Main",
+      "antwort": "Absage",
+      "antwort_datum": "2025-11-26"
+    },
+    {
+      "datum": "2025-11-27",
+      "firma": "WattFox",
+      "stelle": "C# Fullstack Developer (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Freiburg im Breisgau",
+      "antwort": "Sonstige",
+      "antwort_datum": "2025-12-01"
+    },
+    {
+      "datum": "2025-12-02",
+      "firma": "PostHog",
+      "stelle": "Softwareentwickler",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Berlin",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2025-12-08",
+      "firma": "LinoPro",
+      "stelle": "Softwareentwicklerin C# (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Dresden",
+      "antwort": "Absage",
+      "antwort_datum": "2026-01-05"
+    },
+    {
+      "datum": "2025-12-24",
+      "firma": "KA Resources",
+      "stelle": "Softwareentwicklerin C# / .NET",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Gran Canaria (Spanien)",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2025-12-24",
+      "firma": "VESTERLING",
+      "stelle": "Softwareentwicklerin (C# / .NET)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "München",
+      "antwort": "Absage",
+      "antwort_datum": "2026-01-07"
+    },
+    {
+      "datum": "2025-12-24",
+      "firma": "IVUSoftwareentwicklungGmbH",
+      "stelle": "Softwareentwickler (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Burglengenfeld",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-01-05",
+      "firma": "Piening",
+      "stelle": "Software Developer – Produktentwicklung Logistiksoftware",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Osnabrück",
+      "antwort": "Zwischenbescheid",
+      "antwort_datum": "2026-01-06"
+    },
+    {
+      "datum": "2026-01-08",
+      "firma": "Brunel",
+      "stelle": "Softwareentwickler C# / JavaScript (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-05-24"
+    },
+    {
+      "datum": "2026-01-09",
+      "firma": "HiQ",
+      "stelle": "Fullstack Software Engineer (m/w/d) – ASP.NET Core",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-06-03"
+    },
+    {
+      "datum": "2026-01-28",
+      "firma": "GUS",
+      "stelle": "Softwareentwicklerin – ERP-Umfeld",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Köln",
+      "antwort": "Absage",
+      "antwort_datum": "2026-02-25"
+    },
+    {
+      "datum": "2026-01-28",
+      "firma": "Nexis",
+      "stelle": "Software Tester (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-04-01"
+    },
+    {
+      "datum": "2026-02-04",
+      "firma": "n-komm",
+      "stelle": "(Junior) Softwareentwicklerin Lagerlogistik (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Karlsruhe",
+      "antwort": "Absage",
+      "antwort_datum": "2026-02-24"
+    },
+    {
+      "datum": "2026-02-05",
+      "firma": "RIS",
+      "stelle": "Fachinformatikerin Anwendungsentwicklung",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-02-05",
+      "firma": "SYSTEMA",
+      "stelle": "Softwareentwicklerin (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-26"
+    },
+    {
+      "datum": "2026-02-05",
+      "firma": "FERCHAU",
+      "stelle": "Softwareentwicklerin (m/w/d) – Kennziffer ID59-28965-R",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Sonstige",
+      "antwort_datum": "2026-09-03"
+    },
+    {
+      "datum": "2026-02-05",
+      "firma": "InCore",
+      "stelle": "Umschulung Fachinformatikerin Anwendungsentwicklung",
+      "kategorie": "Umschulung / Ausbildung",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-02-27",
+      "firma": "GEVAS",
+      "stelle": "Softwareentwicklerin – Standort Regensburg",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "München",
+      "antwort": "Absage",
+      "antwort_datum": "2026-03-23"
+    },
+    {
+      "datum": "2026-03-11",
+      "firma": "Klärwerk",
+      "stelle": "Informatiker (m/w/d) im Klärwerk – Stellen-Nr. 65-12:3714",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-06-17"
+    },
+    {
+      "datum": "2026-03-16",
+      "firma": "IVU",
+      "stelle": "Softwareentwicklerin Backend (C# / .NET)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Berlin",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-03-16",
+      "firma": "Syskron",
+      "stelle": "Agile Softwareentwicklerin (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Wackersdorf",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-03-20",
+      "firma": "Neumeier",
+      "stelle": "Full Stack Developer (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-04-02"
+    },
+    {
+      "datum": "2026-03-20",
+      "firma": "sixaAG",
+      "stelle": "Customer Care Mitarbeiterin (Quereinsteigerin)",
+      "kategorie": "Quereinstieg",
+      "region": "Zürich",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-03-26",
+      "firma": "Nexis",
+      "stelle": "Software Tester (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-04-01"
+    },
+    {
+      "datum": "2026-03-26",
+      "firma": "ETA",
+      "stelle": "Position über ETA Personal GmbH",
+      "kategorie": "Sonstige",
+      "region": "Heilbronn",
+      "antwort": "Zwischenbescheid",
+      "antwort_datum": "2026-07-22"
+    },
+    {
+      "datum": "2026-04-25",
+      "firma": "Schapfl",
+      "stelle": "Softwareentwicklerin (C# / .NET)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Straubing",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-04-25",
+      "firma": "ILS-Industrie",
+      "stelle": "Softwareentwicklerin (C# / .NET)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-04-25",
+      "firma": "Duvenbeck",
+      "stelle": "Softwareentwicklerin (C# / .NET)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Zwischenbescheid",
+      "antwort_datum": "2026-04-25"
+    },
+    {
+      "datum": "2026-04-25",
+      "firma": "APIS",
+      "stelle": "Softwareentwicklerin – C# / .NET / REST",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Wörth a.d. Donau",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-04-27",
+      "firma": "CADOSYS",
+      "stelle": "Softwareentwicklerin (C# / .NET)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Langenfeld",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-04-27",
+      "firma": "MEDIFOX",
+      "stelle": "C# / .NET Backend Developerin",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Hildesheim",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-04-27",
+      "firma": "Harris",
+      "stelle": "Softwareentwicklerin Datenmigration",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-04-27",
+      "firma": "Rodday",
+      "stelle": "Softwareentwicklerin C# / .NET",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "(noch zu recherchieren)",
+      "antwort": "Absage",
+      "antwort_datum": "2026-04-29"
+    },
+    {
+      "datum": "2026-04-30",
+      "firma": "ibi systems GmbH",
+      "stelle": "Backend Entwickler C# / .NET",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-05-13"
+    },
+    {
+      "datum": "2026-05-01",
+      "firma": "CALConsult",
+      "stelle": "Fullstack Engineer (.NET) – Remote",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Versmold",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-05-01",
+      "firma": "INSYS",
+      "stelle": "Backend Entwickler (m/w/d) – Referenzcode 200-01-26",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-06-22"
+    },
+    {
+      "datum": "2026-05-03",
+      "firma": "FNTIO",
+      "stelle": "NET Developer (Backend) – Remote",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-06-01"
+    },
+    {
+      "datum": "2026-05-03",
+      "firma": "Hypoport",
+      "stelle": "C# Backend Entwickler / .NET (m/w/d) – Remote",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2025-10-02"
+    },
+    {
+      "datum": "2026-05-04",
+      "firma": "Alphatrail",
+      "stelle": "Supply Chain Management – Trainee Programm",
+      "kategorie": "Trainee",
+      "region": "Regensburg",
+      "antwort": "Zwischenbescheid",
+      "antwort_datum": "2026-05-04"
+    },
+    {
+      "datum": "2026-05-05",
+      "firma": "Sparda-Bank",
+      "stelle": "Mitarbeiter Digitales Banking & Online-Banking Support (m/w/d)",
+      "kategorie": "Sonstige",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-05-05",
+      "firma": "Motus",
+      "stelle": "ERP Software Support Specialist (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-06-17"
+    },
+    {
+      "datum": "2026-05-05",
+      "firma": "Akkodis",
+      "stelle": "Großraum Regensburg – Softwareentwicklung / IT / Data",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-26"
+    },
+    {
+      "datum": "2026-05-07",
+      "firma": "eWorks",
+      "stelle": "C#-Entwicklerin",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Frankfurt am Main",
+      "antwort": "Absage",
+      "antwort_datum": "2026-05-15"
+    },
+    {
+      "datum": "2026-05-11",
+      "firma": "Brunel",
+      "stelle": "SPS-Programmiererin mit Erfahrung im Siemens-Umfeld",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-05-24"
+    },
+    {
+      "datum": "2026-05-11",
+      "firma": "Aide",
+      "stelle": "Entwickler (m/w/d) im Bereich Automatisierungstechnik / Simulation",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-09-03"
+    },
+    {
+      "datum": "2026-05-12",
+      "firma": "Reinhausen",
+      "stelle": "Softwareentwicklerin für eine Prüfplattform (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Zwischenbescheid",
+      "antwort_datum": "2026-08-20"
+    },
+    {
+      "datum": "2026-05-14",
+      "firma": "GEFASOFT",
+      "stelle": "Softwareentwicklerin C# / .NET (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-25"
+    },
+    {
+      "datum": "2026-05-14",
+      "firma": "Rockstardevelopers",
+      "stelle": "Webentwickler / Frontend oder Fullstack",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-05-14",
+      "firma": "officepeople",
+      "stelle": "Software Tester (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-05-15",
+      "firma": "SOG",
+      "stelle": "Software Tester (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-05-26"
+    },
+    {
+      "datum": "2026-05-15",
+      "firma": "Skalbach",
+      "stelle": "Anwendungsentwickler C# (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Stuttgart",
+      "antwort": "Absage",
+      "antwort_datum": "2026-05-20"
+    },
+    {
+      "datum": "2026-05-15",
+      "firma": "PassionforPeople",
+      "stelle": "KI Plattform Developer / Big Data (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Stuttgart",
+      "antwort": "Absage",
+      "antwort_datum": "2026-05-18"
+    },
+    {
+      "datum": "2026-05-16",
+      "firma": "OPTITOOL",
+      "stelle": "Trainee / Umschülerin im Bereich Anwendungsentwicklung (m/w/d)",
+      "kategorie": "Trainee",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-25"
+    },
+    {
+      "datum": "2026-05-16",
+      "firma": "Tecvia",
+      "stelle": "Trainee / Fachinformatikerin für Anwendungsentwicklung (m/w/d)",
+      "kategorie": "Trainee",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-05-19",
+      "firma": "­ experts",
+      "stelle": "Anwendungsentwickler (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "München",
+      "antwort": "Einladung",
+      "antwort_datum": "2026-05-19"
+    },
+    {
+      "datum": "2026-05-26",
+      "firma": "Fels-Werke",
+      "stelle": "im Bereich IT, Softwareentwicklung oder kaufmännisch- technischer Bürobereich",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Saal an der Donau",
+      "antwort": "Sonstige",
+      "antwort_datum": "2026-05-26"
+    },
+    {
+      "datum": "2026-05-26",
+      "firma": "Hallo Welt",
+      "stelle": "Sales Trainee im B2B- Softwarevertrieb",
+      "kategorie": "Trainee",
+      "region": "Regensburg",
+      "antwort": "Zwischenbescheid",
+      "antwort_datum": "2026-05-26"
+    },
+    {
+      "datum": "2026-05-27",
+      "firma": "KRONES",
+      "stelle": "Trainee (m/w/d) Human Resources Personalentwicklung",
+      "kategorie": "Trainee",
+      "region": "Neutraubling",
+      "antwort": "Absage",
+      "antwort_datum": "2026-09-01"
+    },
+    {
+      "datum": "2026-05-28",
+      "firma": "TECVIA",
+      "stelle": "Frontend Developer (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-07-06"
+    },
+    {
+      "datum": "2026-05-28",
+      "firma": "OPTITOOL",
+      "stelle": "Web Entwicklerin / Web Developer (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-25"
+    },
+    {
+      "datum": "2026-05-29",
+      "firma": "Scandio",
+      "stelle": "Junior IT Consultant – Digital Transformation (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-05-30",
+      "firma": "FNTIO",
+      "stelle": "Full-Stack Entwickler (m/w/d) - .NET 100% Remote",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-06-01"
+    },
+    {
+      "datum": "2026-05-30",
+      "firma": "IndustrialAnalyticsLab",
+      "stelle": "Junior Software Developer (m/w/d) 100% Remote",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Wetter (Ruhr)",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-05-30",
+      "firma": "Eduvation IT Services",
+      "stelle": "Backend Developer (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Gelsenkirchen",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-05-30",
+      "firma": "Randstad",
+      "stelle": "Sachbearbeiter IT (m/w/d)",
+      "kategorie": "Sonstige",
+      "region": "Regensburg",
+      "antwort": "Sonstige",
+      "antwort_datum": "2026-06-12"
+    },
+    {
+      "datum": "2026-06-01",
+      "firma": "IEMTEC",
+      "stelle": "SPS-Programmiererin (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Barbing",
+      "antwort": "Sonstige",
+      "antwort_datum": "2026-06-01"
+    },
+    {
+      "datum": "2026-06-03",
+      "firma": "Neumueller",
+      "stelle": "SPS-Programmiererin (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-19"
+    },
+    {
+      "datum": "2026-06-04",
+      "firma": "Allgeier",
+      "stelle": "NET Entwickler (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Zwischenbescheid",
+      "antwort_datum": "2026-06-24"
+    },
+    {
+      "datum": "2026-06-04",
+      "firma": "Acadoro",
+      "stelle": "Full Stack Softwareentwickler im Homeoffice (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Kirchheim unter Teck",
+      "antwort": "Absage",
+      "antwort_datum": "2026-06-15"
+    },
+    {
+      "datum": "2026-06-05",
+      "firma": "VerlagHerder",
+      "stelle": "Data Analyst & KI (m/w/d) Growth",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Freiburg im Breisgau",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-06-07",
+      "firma": "Landkreis",
+      "stelle": "im Bereich IT-Support, Digitalisierung und Verwaltung",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Sonstige",
+      "antwort_datum": "2026-06-19"
+    },
+    {
+      "datum": "2026-06-07",
+      "firma": "Treukontax",
+      "stelle": "Ausbildung zur Steuerfachangestellten (m/w/d) 2026",
+      "kategorie": "Umschulung / Ausbildung",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-06-16"
+    },
+    {
+      "datum": "2026-06-07",
+      "firma": "Reinhausen",
+      "stelle": "im Bereich IT, Softwareentwicklung und Digitalisierung",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Zwischenbescheid",
+      "antwort_datum": "2026-08-20"
+    },
+    {
+      "datum": "2026-06-08",
+      "firma": "Debeka",
+      "stelle": "Quereinsteigerin im Vertrieb Versicherungen und Finanzen (w/m/d)",
+      "kategorie": "Quereinstieg",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-06-24"
+    },
+    {
+      "datum": "2026-06-08",
+      "firma": "Raiffeisenbank",
+      "stelle": "im Bereich IT, Digitalisierung, Prozessmanagement und Verwaltung",
+      "kategorie": "Sonstige",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-06-12"
+    },
+    {
+      "datum": "2026-06-11",
+      "firma": "Sparda",
+      "stelle": "Mitarbeiter für IT-Lösungen (w/m/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-07-23"
+    },
+    {
+      "datum": "2026-06-14",
+      "firma": "SpardaBank",
+      "stelle": "Mitarbeiterin für IT-Lösungen und IT-Administration (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-06-14",
+      "firma": "Trenkwalder",
+      "stelle": "Sachbearbeiter (m/w/d) Auftragsabwicklung",
+      "kategorie": "Sonstige",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-06-16",
+      "firma": "KRONES",
+      "stelle": "Software Developer (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Neutraubling",
+      "antwort": "Absage",
+      "antwort_datum": "2026-09-01"
+    },
+    {
+      "datum": "2026-07-24",
+      "firma": "ASMPT",
+      "stelle": "IT Solution Specialist (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-09-02"
+    },
+    {
+      "datum": "2026-07-24",
+      "firma": "zeitconcept",
+      "stelle": "Fachinformatikerin (m/w/d) Power BI / Dashboards",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Zwischenbescheid",
+      "antwort_datum": "2026-08-29"
+    },
+    {
+      "datum": "2026-07-30",
+      "firma": "Meierhofer",
+      "stelle": "Software Engineer Fullstack (.NET / Vue.js) mit Perspektive Software Architect (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Aschheim",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-06"
+    },
+    {
+      "datum": "2026-07-30",
+      "firma": "IVU",
+      "stelle": "Softwareentwicklerin Backend – Energiewirtschaft & Agentic Coding",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Berlin",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-07-31",
+      "firma": "OPTITOOL",
+      "stelle": "OT-D Backend Entwickler / Backend Developer - JAVA (m/w/d) in Vollzeit",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-25"
+    },
+    {
+      "datum": "2026-07-31",
+      "firma": "citema",
+      "stelle": "Full-Stack-Entwickler (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Grasbrunn",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-07-31",
+      "firma": "ASMPT",
+      "stelle": "Software-Entwickler/in C# / C++ (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-09-02"
+    },
+    {
+      "datum": "2026-08-07",
+      "firma": "fuljoyment",
+      "stelle": "Senior Softwareentwicklerin .NET mit KI-Fokus (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Brüsewitz",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-24"
+    },
+    {
+      "datum": "2026-08-11",
+      "firma": "iSSoftware",
+      "stelle": "Softwareentwicklerin C#/.NET",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-08-11",
+      "firma": "Vektor",
+      "stelle": "Softwareentwicklerin C#/.NET",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-08-12",
+      "firma": "knowis",
+      "stelle": "Softwareentwicklerin – C#/.NET, Python & Data Analytics",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Sonstige",
+      "antwort_datum": "2026-08-19"
+    },
+    {
+      "datum": "2026-08-12",
+      "firma": "Gefasoft",
+      "stelle": "Softwareentwicklerin C#/.NET",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-08-12",
+      "firma": "OptWare",
+      "stelle": "Softwareentwicklerin – C#/.NET, Python & Data Analytics",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-17"
+    },
+    {
+      "datum": "2026-08-13",
+      "firma": "AVL Software",
+      "stelle": "Fachinformatikerin für Daten- und Prozessanalyse – Autonomous Mobility",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-08-14",
+      "firma": "ARINNAU",
+      "stelle": "Softwaretester / Testautomatisierer (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-08-14",
+      "firma": "ASMPT",
+      "stelle": "– Softwareentwicklung / Softwaretesting / technische Funktionen",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-09-02"
+    },
+    {
+      "datum": "2026-08-14",
+      "firma": "Bavaria",
+      "stelle": "Programmiererin (Web / Python / Django)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-08-16",
+      "firma": "RADAS",
+      "stelle": "Softwareentwicklerin .NET/C# – Ref. 12254-1-235037-S",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Berlin",
+      "antwort": "Zwischenbescheid",
+      "antwort_datum": "2026-09-04"
+    },
+    {
+      "datum": "2026-08-17",
+      "firma": "audaris",
+      "stelle": "PHP-Backend-Entwicklerin (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Neutraubling",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-24"
+    },
+    {
+      "datum": "2026-08-19",
+      "firma": "Akkodis",
+      "stelle": "SPS-Programmiererin (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-26"
+    },
+    {
+      "datum": "2026-08-19",
+      "firma": "Neumüller",
+      "stelle": "SPS Programmiererin (w/m/d) Industrie 4.0",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-08-20",
+      "firma": "Reinhausen",
+      "stelle": "Softwareentwicklerin / Testerin – Automatisierung & Systemtest",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Zwischenbescheid",
+      "antwort_datum": "2026-08-20"
+    },
+    {
+      "datum": "2026-08-20",
+      "firma": "TAPKO",
+      "stelle": "Softwareentwicklerin / Softwaretesterin – Automatisierung & technische Software",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-08-20",
+      "firma": "Valentum",
+      "stelle": "Softwareentwicklerin / Softwaretesterin – C#/.NET, Automatisierung & technische Software",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-08-20",
+      "firma": "evopro",
+      "stelle": "Softwareentwicklerin / Softwaretesterin / IT- Support – C#/.NET, Automatisierung und technische Software",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Zwischenbescheid",
+      "antwort_datum": "2026-08-20"
+    },
+    {
+      "datum": "2026-08-20",
+      "firma": "systema",
+      "stelle": "Softwareentwicklerin / Junior-SAP-Entwicklerin",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-08-21",
+      "firma": "proLogistik",
+      "stelle": "Softwareentwicklerin C# für die Intralogistik (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-24"
+    },
+    {
+      "datum": "2026-08-25",
+      "firma": "SystemLogistics",
+      "stelle": "Software Developer (m/w/d)",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Wackersdorf",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-08-25",
+      "firma": "Eckert Schulen",
+      "stelle": "Fullstack Entwickler / Softwareentwickler (m/w/d) – React, Node.js & .NET",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regenstauf",
+      "antwort": "Sonstige",
+      "antwort_datum": "2026-09-02"
+    },
+    {
+      "datum": "2026-08-29",
+      "firma": "SCHÄFER",
+      "stelle": "im Bereich IT Solutions – Standort Regensburg",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Sonstige",
+      "antwort_datum": "2026-08-29"
+    },
+    {
+      "datum": "2026-08-30",
+      "firma": "StadtRegensburg",
+      "stelle": "Sachbearbeiterin im Bereich IT-Client- Management der Schulen – Stellen-Nr. 17-07:3964",
+      "kategorie": "Sonstige",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-09-06",
+      "firma": "Neumueller",
+      "stelle": "Bewerbung als Anwendungsentwicklerin (m/w/d) in Regensburg",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Absage",
+      "antwort_datum": "2026-08-19"
+    },
+    {
+      "datum": "2026-09-06",
+      "firma": "Eibl-IT",
+      "stelle": "Initiativbewerbung als IT-Mitarbeiterin / Softwareentwicklerin – IT-Support, technische Anwendungen & Automatisierung",
+      "kategorie": "Softwareentwicklung / IT",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    },
+    {
+      "datum": "2026-09-06",
+      "firma": "Incore Asset Management Solution AG",
+      "stelle": "Initiativbewerbung / Bewerbung als IT-Teamassistenz",
+      "kategorie": "Sonstige",
+      "region": "Regensburg",
+      "antwort": "Keine Antwort",
+      "antwort_datum": NaN
+    }
+  ]
+}
