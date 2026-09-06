@@ -1,4 +1,7 @@
 status,datum,firma,ort,art,schwerpunkt,notizen,rueckmeldung,anzahl_bewerbungen,beworbene_stellen,grund
+BEWORBEN,05.09.2026,Incore Asset Management Solution AG,Regensburg,IT-Teamassistenz,"IT, Softwaretesting, Support, Datenverarbeitung",★★★★ Guter Fit,,1,Umschulung Fachinformatikerin Anwendungsentwicklung (05.02.2026),
+BEWORBEN,05.09.2026,Neumüller Personalberatung e.K.,Regensburg,Bewerbung,"C#/.NET, Python, Software, Testing, Automatisierung",★★★★★ Sehr passend; konkrete Stelle als Anwendungsentwicklerin,,1,SPS Programmiererin (w/m/d) Industrie 4.0 (19.08.2026),
+BEWORBEN,25.08.2026,proLogistik GmbH,Wackersdorf,Bewerbung,"C#/.NET, Software, Testautomatisierung, Automation",★★★★★ Sehr passend; konkrete Junior-Stelle,,1,Softwareentwicklerin C# für die Intralogistik (m/w/d) (21.08.2026),
 BEWORBEN,11.08.2026,trinnovative GmbH,Regensburg,Initiativbewerbung,"C#/.NET, Software, Cloud, KI",,❌ Absage,0,,
 BEWORBEN,11.08.2026,OneVision Software AG,Regensburg,Initiativbewerbung,"C#/.NET, Software, Automation",,,0,,
 BEWORBEN,11.08.2026,iS Software GmbH / Kraftwerk.io,Regensburg,Initiativbewerbung,"C#/.NET, Software, Daten",,,0,,
@@ -16,16 +19,12 @@ BEWORBEN,20.08.2026,Maschinenfabrik Reinhausen GmbH,Regensburg,Initiativbewerbun
 BEWORBEN,20.08.2026,SYSTEMA Projekte,Regensburg,Initiativbewerbung,"Software, SAP, Support","Junior SAP/Softwareentwicklung; ABAP/SAP neu, Einarbeitung",,2,Softwareentwicklerin (m/w/d) (05.02.2026); Softwareentwicklerin / Junior-SAP-Entwicklerin (20.08.2026),
 BEWORBEN,20.08.2026,TAPKO Technologies GmbH,Regensburg,Initiativbewerbung,"Automation, Software, Technik",★ Sehr interessant; auch Trainee,,1,Softwareentwicklerin / Softwaretesterin – Automatisierung & technische Software (20.08.2026),
 BEWORBEN,25.08.2026,System Logistics GmbH,Wackersdorf,Bewerbung,"C#/.NET, Software, Testautomatisierung, Automation",★★★★★ Sehr passend; konkrete Junior-Stelle,,0,,
-NOCH NICHT,,Eibl-IT GmbH,Regensburg,Initiativbewerbung,"IT, Software",Noch prüfen,,0,,
-NOCH NICHT,,Automatisierungstechnik Meier,Regensburg,Initiativbewerbung,Automatisierung,Technischer Bereich,,0,,
-NOCH NICHT,,G-Automatisierung GmbH,Regensburg,Initiativbewerbung,Automatisierung,Technischer Bereich,,0,,
-NOCH NICHT,05.09.2026,proLogistik,Regensburg,Bewerbung,"C#/.NET, Intralogistik Software",★★★★★ Sehr passend; C# und industrielle Software,,1,Softwareentwicklerin C# für die Intralogistik (m/w/d) (21.08.2026),
-NOCH NICHT,05.09.2026,GRODE Engineering GmbH & Co. KG,Neutraubling,Bewerbung,"Siemens SPS, TIA Portal Automatisierung",★★★★ Interessant; Siemens-/ SCL-Erfahrung vorhanden,,0,,
-NOCH NICHT,05.09.2026,amaxo GmbH,Regensburg,Bewerbung,"SPS, S7, TIA Portal",★★★★ Interessant; Automatisie- rungsausbildung passt,,0,,
-NOCH NICHT,05.09.2026,Reng Industriesysteme GmbH,Regensburg,Bewerbung,"SPS, Automatisierung",★★★ Möglich; stärker Elektro- technik/SPS-lastig,,0,,
-NOCH NICHT,05.09.2026,Neumüller Personalberatung e.K.,Regensburg,Bewerbung,"SPS, Industrie 4.0",★★★ Interessant; Teilzeit möglich,,1,SPS Programmiererin (w/m/d) Industrie 4.0 (19.08.2026),
-NOCH NICHT,05.09.2026,Allgeier IT GmbH,Regensburg,Bewerbung,".NET, Softwareentwicklung",★★★★★ Sehr passend; bis zu 80 % Homeoffice,,1,NET Entwickler (m/w/d) (04.06.2026),
-NOCH NICHT,05.09.2026,InCore Bank AG,Regensburg,Bewerbung,"Full-Stack, Software",★★★★ Prüfen; aktuelle Full-Stack-Kenntnisse,,1,Umschulung Fachinformatikerin Anwendungsentwicklung (05.02.2026),
+BEWORBEN,06.09.2026,Eibl-IT GmbH,Regensburg,Initiativbewerbung,"IT, Software, Support, Testing, Automatisierung",Initiativbewerbung; technische IT-Aufgaben,,0,,
+NOCH NICHT,05.09.2026,Allgeier IT GmbH,Regensburg,--,".NET, Softwareentwicklung","Stelle extern noch auffindbar, aber auf offizieller Seite schwer/nicht auffindbar",,1,NET Entwickler (m/w/d) (04.06.2026),
+NICHT WEITER VERFOLGEN,06.09.2026,RENG Industriesysteme GmbH,Regensburg,--,"Automatisierung, Software",Keine passende aktuelle Stelle in Regensburg; ältere Ausschreibungen nicht aktuell,,0,,Kein aktueller Bedarf
+NICHT WEITER VERFOLGEN,06.09.2026,GRODE Engineering GmbH & Co. KG,Neutraubling,Bewerbung,"SPS, Automatisierung, Siemens/TIA",Bereits 2x beworben; keine Rückmeldung erhalten,,0,,Kein aktueller Bedarf
+NICHT WEITER VERFOLGEN,06.09.2026,G-Automatisierung GmbH,Regensburg,--,Automatisierung,Zu kleine Firma; keine aktuelle Stellenausschreibung / kein konkreter Bedarf erkennbar,,0,,Kein aktueller Bedarf
+NICHT WEITER VERFOLGEN,06.09.2026,Automatisierungstechnik Meier,Regensburg,--,Automatisierung,Keine aktuelle Stelle; Website nicht erreichbar,,0,,Kein aktueller Bedarf
 NICHT WEITER VERFOLGEN,05.09.2026,Tiwo IT Solutions GmbH,Regensburg,--,"IT, Software",Keine passende aktuelle Stelle bzw. kein konkreter Bedarf erkennbar,,0,,Kein aktueller Bedarf
 NICHT WEITER VERFOLGEN,05.09.2026,WAYT AG,Regensburg,--,"IT, Software, Beratung",Keine passende aktuelle Stelle für mein Profil; BPM/Camunda Erfahrung fehlt,,0,,Profil passt nicht
 NICHT WEITER VERFOLGEN,05.09.2026,ANUMA,Regensburg,--,"Software, IT-Beratung",Keine passende aktuelle Stelle / keine Priorität,,0,,Keine Priorität
