@@ -52,7 +52,23 @@ def parse_firmenliste(path: str = SOURCE_PATH) -> pd.DataFrame:
 
     df = pd.DataFrame(entries)
     df["datum"] = df["datum"].replace("--", "")
+    df["firma"] = df["firma"].apply(_anonymisiere_firma)
     return df
+
+
+# Bekannte natürliche Personennamen in Firmennamen (z.B. bei eingetragenen
+# Kaufleuten/e.K., wo der Name der Inhaberin Teil des Firmennamens ist) -
+# Firma bleibt erkennbar, der private Name wird für die öffentliche
+# Veröffentlichung entfernt.
+PERSONENNAMEN_IN_FIRMA = [
+    "Regina Neumüller",
+]
+
+
+def _anonymisiere_firma(firma: str) -> str:
+    for name in PERSONENNAMEN_IN_FIRMA:
+        firma = firma.replace(name, "").strip()
+    return re.sub(r"\s+", " ", firma).strip()
 
 
 LOKALE_ORTE = {"regensburg", "neutraubling", "wackersdorf"}
