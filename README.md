@@ -16,6 +16,7 @@ dashboard/                     Die Streamlit-App selbst (nichts anderes)
     config.toml                Theme (lokale Kopie für `cd dashboard && streamlit run ...`)
 src/                           Wiederverwendbare Python-Module (Datenaufbereitung + UI-Bausteine)
   bewerbungen.py                Liest Anschreiben-PDFs aus OneDrive, extrahiert Firma/Stelle/Datum/Ort
+                                 (+ manuelle Ergänzung ohne PDF, siehe unten)
   firmenliste.py                Parst die handgepflegte Firmenliste (Firmen_Softwareentwicklung.txt)
   firmen_orte.py                Pflegt data/firmen_orte.csv (Firma -> recherchierter Ort)
   data_loader.py                Lädt data/bewerbungen.csv fürs Dashboard
@@ -36,6 +37,16 @@ docs/
   Bewerbungsgeschichte.docx     Erzählende Rückschau auf alle Bewerbungen
 data/                           Exportierte CSVs (Datenquelle des Dashboards, keine PDFs/Pfade)
 ```
+
+### Bewerbungen ohne PDF (manuelle Ergänzung)
+
+Manche Bewerbungen werden direkt per E-Mail oder über ein Online-Formular verschickt,
+ohne dass ein Anschreiben als PDF im `Anschreiben_Alt`-Ordner landet - `export_data.py`
+würde sie sonst nie zählen. Abhilfe: `Bewerbungen_ohne_PDF.csv` im selben OneDrive-Ordner
+(Spalten: `datum` [TT.MM.JJJJ], `firma`, `stelle`) von Hand pflegen - wird bei jedem
+Export automatisch mit eingelesen und genauso weiterverarbeitet wie ein PDF-Fund
+(Kategorie/Ort werden wie gewohnt automatisch abgeleitet). Datei existiert sie nicht,
+wird einfach nichts ergänzt.
 
 ### Postfach-Abgleich (E-Mail-Antworten)
 

@@ -45,24 +45,24 @@ datum,firma,stelle,kategorie,region
 2026-03-16,Syskron,Agile Softwareentwicklerin (m/w/d),Softwareentwicklung / IT,Wackersdorf
 2026-03-20,Neumeier,Full Stack Developer (m/w/d),Softwareentwicklung / IT,Regensburg
 2026-03-20,sixaAG,Customer Care Mitarbeiterin (Quereinsteigerin),Quereinstieg,Zürich
-2026-03-26,ETA,Position über ETA Personal GmbH,Sonstige,Heilbronn
 2026-03-26,Nexis,Software Tester (m/w/d),Softwareentwicklung / IT,Regensburg
+2026-03-26,ETA,Position über ETA Personal GmbH,Sonstige,Heilbronn
 2026-04-25,Schapfl,Softwareentwicklerin (C# / .NET),Softwareentwicklung / IT,Straubing
-2026-04-25,APIS,Softwareentwicklerin – C# / .NET / REST,Softwareentwicklung / IT,Wörth a.d. Donau
 2026-04-25,ILS-Industrie,Softwareentwicklerin (C# / .NET),Softwareentwicklung / IT,Regensburg
 2026-04-25,Duvenbeck,Softwareentwicklerin (C# / .NET),Softwareentwicklung / IT,Regensburg
-2026-04-27,Rodday,Softwareentwicklerin C# / .NET,Softwareentwicklung / IT,(noch zu recherchieren)
+2026-04-25,APIS,Softwareentwicklerin – C# / .NET / REST,Softwareentwicklung / IT,Wörth a.d. Donau
 2026-04-27,CADOSYS,Softwareentwicklerin (C# / .NET),Softwareentwicklung / IT,Langenfeld
 2026-04-27,MEDIFOX,C# / .NET Backend Developerin,Softwareentwicklung / IT,Hildesheim
 2026-04-27,Harris,Softwareentwicklerin Datenmigration,Softwareentwicklung / IT,Regensburg
+2026-04-27,Rodday,Softwareentwicklerin C# / .NET,Softwareentwicklung / IT,(noch zu recherchieren)
 2026-04-30,ibi systems GmbH,Backend Entwickler C# / .NET,Softwareentwicklung / IT,Regensburg
-2026-05-01,INSYS,Backend Entwickler (m/w/d) – Referenzcode 200-01-26,Softwareentwicklung / IT,Regensburg
 2026-05-01,CALConsult,Fullstack Engineer (.NET) – Remote,Softwareentwicklung / IT,Versmold
-2026-05-03,Hypoport,C# Backend Entwickler / .NET (m/w/d) – Remote,Softwareentwicklung / IT,Regensburg
+2026-05-01,INSYS,Backend Entwickler (m/w/d) – Referenzcode 200-01-26,Softwareentwicklung / IT,Regensburg
 2026-05-03,FNTIO,NET Developer (Backend) – Remote,Softwareentwicklung / IT,Regensburg
+2026-05-03,Hypoport,C# Backend Entwickler / .NET (m/w/d) – Remote,Softwareentwicklung / IT,Regensburg
 2026-05-04,Alphatrail,Supply Chain Management – Trainee Programm,Trainee,Regensburg
-2026-05-05,Motus,ERP Software Support Specialist (m/w/d),Softwareentwicklung / IT,Regensburg
 2026-05-05,Sparda-Bank,Mitarbeiter Digitales Banking & Online-Banking Support (m/w/d),Sonstige,Regensburg
+2026-05-05,Motus,ERP Software Support Specialist (m/w/d),Softwareentwicklung / IT,Regensburg
 2026-05-05,Akkodis,Großraum Regensburg – Softwareentwicklung / IT / Data,Softwareentwicklung / IT,Regensburg
 2026-05-07,eWorks,C#-Entwicklerin,Softwareentwicklung / IT,Frankfurt am Main
 2026-05-11,Brunel,SPS-Programmiererin mit Erfahrung im Siemens-Umfeld,Softwareentwicklung / IT,Regensburg
@@ -83,30 +83,30 @@ datum,firma,stelle,kategorie,region
 2026-05-28,TECVIA,Frontend Developer (m/w/d),Softwareentwicklung / IT,Regensburg
 2026-05-28,OPTITOOL,Web Entwicklerin / Web Developer (m/w/d),Softwareentwicklung / IT,Regensburg
 2026-05-29,Scandio,Junior IT Consultant – Digital Transformation (m/w/d),Softwareentwicklung / IT,Regensburg
-2026-05-30,Eduvation IT Services,Backend Developer (m/w/d),Softwareentwicklung / IT,Gelsenkirchen
 2026-05-30,FNTIO,Full-Stack Entwickler (m/w/d) - .NET 100% Remote,Softwareentwicklung / IT,Regensburg
 2026-05-30,IndustrialAnalyticsLab,Junior Software Developer (m/w/d) 100% Remote,Softwareentwicklung / IT,Wetter (Ruhr)
+2026-05-30,Eduvation IT Services,Backend Developer (m/w/d),Softwareentwicklung / IT,Gelsenkirchen
 2026-05-30,Randstad,Sachbearbeiter IT (m/w/d),Sonstige,Regensburg
 2026-06-01,IEMTEC,SPS-Programmiererin (m/w/d),Softwareentwicklung / IT,Barbing
 2026-06-03,Neumueller,SPS-Programmiererin (m/w/d),Softwareentwicklung / IT,Regensburg
 2026-06-04,Allgeier,NET Entwickler (m/w/d),Softwareentwicklung / IT,Regensburg
 2026-06-04,Acadoro,Full Stack Softwareentwickler im Homeoffice (m/w/d),Softwareentwicklung / IT,Kirchheim unter Teck
 2026-06-05,VerlagHerder,Data Analyst & KI (m/w/d) Growth,Softwareentwicklung / IT,Freiburg im Breisgau
-2026-06-07,Reinhausen,"im Bereich IT, Softwareentwicklung und Digitalisierung",Softwareentwicklung / IT,Regensburg
-2026-06-07,Treukontax,Ausbildung zur Steuerfachangestellten (m/w/d) 2026,Umschulung / Ausbildung,Regensburg
 2026-06-07,Landkreis,"im Bereich IT-Support, Digitalisierung und Verwaltung",Softwareentwicklung / IT,Regensburg
-2026-06-08,Raiffeisenbank,"im Bereich IT, Digitalisierung, Prozessmanagement und Verwaltung",Sonstige,Regensburg
+2026-06-07,Treukontax,Ausbildung zur Steuerfachangestellten (m/w/d) 2026,Umschulung / Ausbildung,Regensburg
+2026-06-07,Reinhausen,"im Bereich IT, Softwareentwicklung und Digitalisierung",Softwareentwicklung / IT,Regensburg
 2026-06-08,Debeka,Quereinsteigerin im Vertrieb Versicherungen und Finanzen (w/m/d),Quereinstieg,Regensburg
+2026-06-08,Raiffeisenbank,"im Bereich IT, Digitalisierung, Prozessmanagement und Verwaltung",Sonstige,Regensburg
 2026-06-11,Sparda,Mitarbeiter für IT-Lösungen (w/m/d),Softwareentwicklung / IT,Regensburg
-2026-06-14,Trenkwalder,Sachbearbeiter (m/w/d) Auftragsabwicklung,Sonstige,Regensburg
 2026-06-14,SpardaBank,Mitarbeiterin für IT-Lösungen und IT-Administration (m/w/d),Softwareentwicklung / IT,Regensburg
+2026-06-14,Trenkwalder,Sachbearbeiter (m/w/d) Auftragsabwicklung,Sonstige,Regensburg
 2026-06-16,KRONES,Software Developer (m/w/d),Softwareentwicklung / IT,Neutraubling
-2026-07-24,zeitconcept,Fachinformatikerin (m/w/d) Power BI / Dashboards,Softwareentwicklung / IT,Regensburg
 2026-07-24,ASMPT,IT Solution Specialist (m/w/d),Softwareentwicklung / IT,Regensburg
+2026-07-24,zeitconcept,Fachinformatikerin (m/w/d) Power BI / Dashboards,Softwareentwicklung / IT,Regensburg
 2026-07-30,Meierhofer,Software Engineer Fullstack (.NET / Vue.js) mit Perspektive Software Architect (m/w/d),Softwareentwicklung / IT,Aschheim
 2026-07-30,IVU,Softwareentwicklerin Backend – Energiewirtschaft & Agentic Coding,Softwareentwicklung / IT,Berlin
-2026-07-31,citema,Full-Stack-Entwickler (m/w/d),Softwareentwicklung / IT,Grasbrunn
 2026-07-31,OPTITOOL,OT-D Backend Entwickler / Backend Developer - JAVA (m/w/d) in Vollzeit,Softwareentwicklung / IT,Regensburg
+2026-07-31,citema,Full-Stack-Entwickler (m/w/d),Softwareentwicklung / IT,Grasbrunn
 2026-07-31,ASMPT,Software-Entwickler/in C# / C++ (m/w/d),Softwareentwicklung / IT,Regensburg
 2026-08-07,fuljoyment,Senior Softwareentwicklerin .NET mit KI-Fokus (m/w/d),Softwareentwicklung / IT,Brüsewitz
 2026-08-11,iSSoftware,Softwareentwicklerin C#/.NET,Softwareentwicklung / IT,Regensburg
@@ -115,16 +115,16 @@ datum,firma,stelle,kategorie,region
 2026-08-12,Gefasoft,Softwareentwicklerin C#/.NET,Softwareentwicklung / IT,Regensburg
 2026-08-12,OptWare,"Softwareentwicklerin – C#/.NET, Python & Data Analytics",Softwareentwicklung / IT,Regensburg
 2026-08-13,AVL Software,Fachinformatikerin für Daten- und Prozessanalyse – Autonomous Mobility,Softwareentwicklung / IT,Regensburg
-2026-08-14,Bavaria,Programmiererin (Web / Python / Django),Softwareentwicklung / IT,Regensburg
 2026-08-14,ARINNAU,Softwaretester / Testautomatisierer (m/w/d),Softwareentwicklung / IT,Regensburg
 2026-08-14,ASMPT,– Softwareentwicklung / Softwaretesting / technische Funktionen,Softwareentwicklung / IT,Regensburg
+2026-08-14,Bavaria,Programmiererin (Web / Python / Django),Softwareentwicklung / IT,Regensburg
 2026-08-16,RADAS,Softwareentwicklerin .NET/C# – Ref. 12254-1-235037-S,Softwareentwicklung / IT,Berlin
 2026-08-17,audaris,PHP-Backend-Entwicklerin (m/w/d),Softwareentwicklung / IT,Neutraubling
-2026-08-19,Neumüller,SPS Programmiererin (w/m/d) Industrie 4.0,Softwareentwicklung / IT,Regensburg
 2026-08-19,Akkodis,SPS-Programmiererin (m/w/d),Softwareentwicklung / IT,Regensburg
+2026-08-19,Neumüller,SPS Programmiererin (w/m/d) Industrie 4.0,Softwareentwicklung / IT,Regensburg
+2026-08-20,Reinhausen,Softwareentwicklerin / Testerin – Automatisierung & Systemtest,Softwareentwicklung / IT,Regensburg
 2026-08-20,TAPKO,Softwareentwicklerin / Softwaretesterin – Automatisierung & technische Software,Softwareentwicklung / IT,Regensburg
 2026-08-20,Valentum,"Softwareentwicklerin / Softwaretesterin – C#/.NET, Automatisierung & technische Software",Softwareentwicklung / IT,Regensburg
-2026-08-20,Reinhausen,Softwareentwicklerin / Testerin – Automatisierung & Systemtest,Softwareentwicklung / IT,Regensburg
 2026-08-20,evopro,"Softwareentwicklerin / Softwaretesterin / IT- Support – C#/.NET, Automatisierung und technische Software",Softwareentwicklung / IT,Regensburg
 2026-08-20,systema,Softwareentwicklerin / Junior-SAP-Entwicklerin,Softwareentwicklung / IT,Regensburg
 2026-08-21,proLogistik,Softwareentwicklerin C# für die Intralogistik (m/w/d),Softwareentwicklung / IT,Regensburg
@@ -132,3 +132,6 @@ datum,firma,stelle,kategorie,region
 2026-08-25,Eckert Schulen,"Fullstack Entwickler / Softwareentwickler (m/w/d) – React, Node.js & .NET",Softwareentwicklung / IT,Regenstauf
 2026-08-29,SCHÄFER,im Bereich IT Solutions – Standort Regensburg,Softwareentwicklung / IT,Regensburg
 2026-08-30,StadtRegensburg,Sachbearbeiterin im Bereich IT-Client- Management der Schulen – Stellen-Nr. 17-07:3964,Sonstige,Regensburg
+2026-09-06,Neumueller,Bewerbung als Anwendungsentwicklerin (m/w/d) in Regensburg,Softwareentwicklung / IT,Regensburg
+2026-09-06,Eibl-IT,"Initiativbewerbung als IT-Mitarbeiterin / Softwareentwicklerin – IT-Support, technische Anwendungen & Automatisierung",Softwareentwicklung / IT,Regensburg
+2026-09-06,Incore Asset Management Solution AG,Initiativbewerbung / Bewerbung als IT-Teamassistenz,Sonstige,Regensburg

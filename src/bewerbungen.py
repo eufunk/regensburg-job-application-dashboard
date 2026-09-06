@@ -15,6 +15,12 @@ from pypdf import PdfReader
 BASE_DIR = r"C:\Users\funke\OneDrive\Bewerbungen\Bewerbungen\Anschreiben_Alt"
 SUBFOLDERS = ["Alt", "Neu"]
 
+# Manuell gepflegte Ergänzung für Bewerbungen ohne lokal gespeichertes PDF
+# (z.B. direkt per E-Mail oder über ein Online-Formular verschickt). Spalten:
+# datum (TT.MM.JJJJ), firma, stelle - wird 1:1 wie ein PDF-Fund weiterverarbeitet
+# (Kategorie/Ort werden wie gewohnt automatisch abgeleitet).
+MANUELLE_CSV = os.path.join(BASE_DIR, "Bewerbungen_ohne_PDF.csv")
+
 MONTH_NAMES_DE = {
     1: "Januar", 2: "Februar", 3: "März", 4: "April", 5: "Mai", 6: "Juni",
     7: "Juli", 8: "August", 9: "September", 10: "Oktober", 11: "November", 12: "Dezember",
@@ -169,6 +175,36 @@ def parse_filename(stem: str) -> str:
     return firma or "(unbekannt)"
 
 
+def collect_manuelle_bewerbungen(csv_path: str = MANUELLE_CSV) -> list[dict]:
+    """Liest Bewerbungen ohne lokales PDF aus der manuell gepflegten CSV
+    (Spalten: datum, firma, stelle). Existiert die Datei nicht, gibt es
+    einfach nichts zu ergänzen."""
+    if not os.path.exists(csv_path):
+        return []
+
+    manuell = pd.read_csv(csv_path, dtype=str).fillna("")
+    rows = []
+    for r in manuell.itertuples():
+        try:
+            tag, monat, jahr = r.datum.strip().split(".")
+            date_obj = parse_date(tag, monat, jahr)
+        except (ValueError, AttributeError):
+            date_obj = None
+        if date_obj is None:
+            continue  # ungültiges Datum ueberspringen statt den ganzen Export abzubrechen
+
+        rows.append({
+            "ordner": "Manuell",
+            "firma": r.firma.strip(),
+            "stelle": r.stelle.strip() or "(nicht erkannt)",
+            "ort_hinweis": "",
+            "datum": date_obj,
+            "datum_quelle": "Manuell",
+            "dateiname": "",
+        })
+    return rows
+
+
 def collect_bewerbungen(base_dir: str = BASE_DIR, subfolders=SUBFOLDERS) -> list[dict]:
     rows = []
     for folder in subfolders:
@@ -204,6 +240,8 @@ def collect_bewerbungen(base_dir: str = BASE_DIR, subfolders=SUBFOLDERS) -> list
                 "datum_quelle": datum_quelle,
                 "dateiname": filename,
             })
+
+    rows.extend(collect_manuelle_bewerbungen())
     return rows
 
 
